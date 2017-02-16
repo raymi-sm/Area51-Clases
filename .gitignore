@@ -11,6 +11,6 @@ public/system/
 *.DS_Store
 */.DS_Store
 .sass-cache
-node_modules
+node_modules/
 ejemplos-clase/node_modules
-slide.js/node_modules
+slide/node_modules
