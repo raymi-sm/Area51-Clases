@@ -16,10 +16,13 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #fff;
+$backgroundColor: #000;
+$green: #9bd005;
+$blue: #1e83ad;
+$red: #d14c42;
 
-$mainColor: #222;
-$headingColor: #222;
+$mainColor: #fff;
+$headingColor: #fff;
 
 $mainFontSize: 42px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
@@ -47,3 +50,11 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+	.wrap {
+		&--green {
+			background-color: $green!important;
+		}
+	}
+}
