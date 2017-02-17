@@ -14,3 +14,5 @@ public/system/
 node_modules/
 ejemplos-clase/node_modules
 slides/node_modules
+npm-debug.log
+*/npm-debug.log

@@ -46,15 +46,75 @@ section.has-dark-background {
 	}
 }
 
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
-.reveal {
+
+.reveal {
+	pre {
+		text-align: center;
+	}
 	.wrap {
 		&--green {
-			background-color: $green!important;
+			background: $green;
+		}
+		&--blue {
+			background: $blue;
+		}
+		&--red {
+			background: $red;
+		}
+		&__content {
+			//margin-top: 120px;
+		}
+		&__code {
+			pre {
+				font-size: 1em;
+    		width: 23%;
+    		text-align: center;
+			}
+
+		}
+	}
+	.item {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.notes {
+		code {
+			color: $green;
+		}
+	}
+	.form-examples {
+		margin-top: 70px;
+		ul {
+			margin-top: 15px;
+		}
+		pre {
+			padding: 0;
+			margin:0;
+		}
+		input {
+			width: 100%;
+			padding: 5px 0 4px 40px;
+			margin-top: 20px;
+			display: block;
+			font-size: 1em;
+		}
+		&__text {
+			width: 40%;
+			padding: 0 0 23px 0;
+		}
+		&__radio {
+			color: white;
+			input {
+				display: inline;
+			}
+		}
+
+		.radio-btn, .checkbox-btn {
+			width: 100%;
 		}
 	}
 }
