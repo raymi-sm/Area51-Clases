@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>Inicio</title>
+  </head>
+  <body>
+    <h1>Estructura de Tablas</h1>
+    <table>
+      <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+        <th>Encabezado 4</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>Sabado</th>
+        <th>Domingo</th>
+      </tr>
+      <tr>
+        <th>Entradas Vendidas:</th>
+        <td>150</td>
+        <td>240</td>
+      </tr>
+      <tr>
+        <th>Entradas Vendidas:</th>
+        <td>600</td>
+        <td>300</td>
+      </tr>
+    </table>
+
+    <h1>Tablas Grandes</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Dias de Semana:</th>
+          <td>Lunes</td>
+          <td>Martes</td>
+          <td>Miercoles</td>
+          <td>Jueves</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th></th>
+          <td>$100</td>
+          <td>$500</td>
+          <td>$700</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>$100</td>
+          <td>$500</td>
+          <td>$700</td>
+          <td>$50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total:</th>
+          <td>$100</td>
+          <td>$500</td>
+          <td>$700</td>
+          <td>$50</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h1>Expandiendo Filas en Celdas</h1>
+
+    <table>
+      <tr>
+        <th>10am</th>
+        <th>10pm</th>
+        <th>4pm</th>
+        <th>2am</th>
+        <th>5pm</th>
+        <th>8am</th>
+      </tr>
+      <tr>
+        <th>Lunes</th>
+        <td colspan="3">Esta fila está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+      </tr>
+    </table>
+
+    <h1>Expandiendo Filas en Columnas</h1>
+
+    <table>
+      <tr>
+        <th>10am</th>
+        <th>10pm</th>
+        <th>4pm</th>
+        <th>2am</th>
+        <th>5pm</th>
+        <th>8am</th>
+      </tr>
+      <tr>
+        <th>Lunes</th>
+        <td rowspan="2">Esta columna está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+      </tr>
+
+      <tr>
+        <th>Martes</th>
+        <td rowspan="2">Esta columna está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+      </tr>
+
+      <tr>
+        <th>Miercoles</th>
+        <td rowspan="3">Esta columna está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+      </tr>
+      <tr>
+        <th>Jueves</th>
+        <td rowspan="3">Esta columna está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+        <td>Esta fila no está colapsada</td>
+      </tr>
+    </table>
+
+    <h1>Estructura de Formularios</h1>
+    <form action="http://example.com/login.php" method="get">
+      <div><input type="text" maxlength="5" placeholder="escribe tu usuario" name="usuario"></div>
+      <div><input type="password" placeholder="escribe tu contraseña" name="contraseña"></div>
+      <div>
+        <input type="radio"> Rock
+        <input type="radio"> Jazz
+        <input type="radio"> Pop
+      </div>
+
+      <div>
+        <input type="checkbox"> Yellow
+        <input type="checkbox"> Red
+        <input type="checkbox"> Purple
+      </div>
+    </form>
+  </body>
+</html>

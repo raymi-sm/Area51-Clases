@@ -1,21 +1,8 @@
-/**
- * White theme for reveal.js. This is the opposite of the 'black' theme.
- *
- * By Hakim El Hattab, http://hakim.se
- */
-
-
-// Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
-// ---------------------------------------------
 
-
-// Include theme-specific fonts
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 
-
-// Override theme settings (see ../template/settings.scss)
 $backgroundColor: #000;
 $green: #9bd005;
 $blue: #1e83ad;
@@ -45,11 +32,7 @@ section.has-dark-background {
 		color: #fff;
 	}
 }
-
-// Theme template ------------------------------
 @import "../template/theme";
-// ---------------------------------------------
-
 
 .reveal {
 	pre {
@@ -66,12 +49,12 @@ section.has-dark-background {
 			background: $red;
 		}
 		&__content {
-			//margin-top: 120px;
+			margin-top: 120px;
 		}
 		&__code {
 			pre {
 				font-size: 1em;
-    		width: 23%;
+    		width: 100%;
     		text-align: center;
 			}
 
@@ -87,6 +70,7 @@ section.has-dark-background {
 		}
 	}
 	.form-examples {
+		box-sizing: border-box;
 		margin-top: 70px;
 		ul {
 			margin-top: 15px;
@@ -106,15 +90,53 @@ section.has-dark-background {
 			width: 40%;
 			padding: 0 0 23px 0;
 		}
-		&__radio {
-			color: white;
+		&__files {
+			-webkit-appearance: initial;
+			background-color: initial;
+			padding: initial;
+			border: initial;
+		}
+		&.checkboxes {
+			font-size: 0.7em;
 			input {
 				display: inline;
+				width: 7%;
 			}
 		}
-
+		&.btn {
+			input {
+				display: inline;
+				width: 25%;
+				padding-left: 0;
+			}
+		}
+		&__radio, &__password {
+			margin-top: 10px;
+			color: white;
+		}
 		.radio-btn, .checkbox-btn {
 			width: 100%;
+			font-size: 0.8em;
 		}
+		&__submit {
+			input {
+				display: block !important;
+				height: 100px;
+			}
+		}
+	}
+	.atributos-universales {
+		pre {
+			font-size: 1.7em;
+		}
+	}
+	.agrupando-elementos {
+		pre {
+			font-size: 1.5em;
+			width: 40%;
+			margin-top: 200px;
+			margin-right: 30px;
+		}
+		margin-top: 120px;
 	}
 }

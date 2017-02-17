@@ -8,11 +8,8 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/area51.css">
-
-		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
@@ -34,35 +31,33 @@
 						<li>Formularios</li>
 						<li>Como especificar diferentes versiones de HTML</li>
 						<li>Identificar y agrupar elementos</li>
-						<li>Informacion extra para el navegador</li>
-						<li>Iframes</li>
 					</ul>
 				</section>
 				<section class="wrap wrap--red">
 					<h1>Tablas</h1>
 				</section>
 				<section class="wrap">
-					<div class="wrap__content">
+					<div class="wrap__content table-img">
 						<p>Una tabla es un elemento que nos permite poder agrupar y mostrar información en una grilla</p>
+					</div>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content">
 						<img src="lib/images/tablas-1.png" alt="">
 					</div>
 				</section>
 				<section class="wrap">
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;table&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;tr&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;td&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;th&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 				</section>
 				<section class="wrap wrap--green">
@@ -77,15 +72,12 @@
 				<section class="wrap">
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;thead&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;tbody&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 					<div class="wrap__code">
 						<pre class="item"><code>&lt;tfoot&gt;</code></pre>
-						<p class="item">Description</p>
 					</div>
 				</section>
 				<section class="wrap wrap--blue">
@@ -93,8 +85,8 @@
 						<h3>Recordar</h3>
 						<ul class="notes">
 							<li>La etiqueta <code>&lt;table&gt;</code> se utiliza para agregar tables a nuestro sitio</li>
-							<li>Las tablas son armadas a partir de las columnas. Cada columna es create con la etiqueta <code>&lt;tr&gt;</code></li>
-							<li>Dentro de cada columna se pueden agregar un número infinito de celdas, representadas por la etiqueta <code>&lt;td&gt;</code> ( o <code>&lt;th&gt;</code> si es un encabezado)</li>
+							<li>Las tablas son armadas a partir de filas. Cada fila es creada con la etiqueta <code>&lt;tr&gt;</code></li>
+							<li>Dentro de cada fila se pueden agregar un número infinito de celdas, representadas por la etiqueta <code>&lt;td&gt;</code> ( o <code>&lt;th&gt;</code> si es un encabezado)</li>
 							<li>Podemos agrupar las tables que son muy grandes en<code>&lt;thread&gt;</code>
 							<code>&lt;tbody&gt;</code>
 							<code>&lt;tfoot&gt;</code>
@@ -114,7 +106,7 @@
 				<section class="wrap">
 					<div class="wrap__content">
 						<div class="form-examples">
-							<h5>Entradas de Texto</h5>
+							<h3>Entradas de Texto</h3>
 							<ul>
 								<li class="item">
 									<pre class="password"><code>&lt;input type=&quot;text&quot;&gt;</code></pre>
@@ -134,30 +126,76 @@
 				</section>
 				<section class="wrap">
 					<div class="wrap__content">
-						<div class="form-examples">
-							<h5>Checkboxes</h5>
+						<div class="form-examples checkboxes">
+							<h3>Tomando Decisiones</h3>
 							<ul>
 								<li class="item">
-									<pre class="radio-btn"><code>&lt;input type=&quot;radio&quot;&gt;Rock</code></pre>
+									<pre class="radio-btn"><code>&lt;input type=&quot;radio&quot;&gt;Rock</code><code>&lt;input type=&quot;radio&quot;&gt;Pop</code><code>&lt;input type=&quot;radio&quot;&gt;Classic</code></pre>
 									<div class="form-examples__radio">
-										<input type="radio">Rock
+										<input type="radio"> Rock
+										<input type="radio"> Pop
+										<input type="radio"> Classic
 									</div>
 								</li>
 								<li class="item">
-									<pre class="checkbox-btn"><code>&lt;input type=&quot;checkbox&quot;&gt;</code></pre>
+									<pre class="checkbox-btn"><code>&lt;input type=&quot;checkbox&quot;&gt;Yellow</code><code>&lt;input type=&quot;checkbox&quot;&gt;Red</code><code>&lt;input type=&quot;checkbox&quot;&gt;Blue</code></pre>
 									<div class="form-examples__password">
-										<form action="">
-											<input type="checkbox"> Meow
-										</form>
+											<input type="checkbox"> Yellow
+											<input type="checkbox"> Red
+											<input type="checkbox"> Blue
 									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</section>
-				<section class="wrap wrap--green">
+				<section class="wrap">
+					<div class="wrap__content">
+						<div class="form-examples btn">
+							<h3>Enviar Información</h3>
+							<ul>
+								<li class="item">
+									<pre class="radio-btn"><code>&lt;input type=&quot;image&quot; src=&quot;ruta/de/la/imagen.png&quot; width=&quot;100&quot;&gt;</code></pre>
+									<div class="form-examples__btn-img">
+										<input type="image" name="image" src="http://astropolitics.org/v2/transparent-subscribe-button-youtube-3563913.png" width="350">
+									</div>
+								</li>
+								<li class="item">
+									<pre class="radio-btn"><code>&lt;input type=&quot;submit&quot; name=&quot;submit-btn&quot; value=&quot;Enviar&quot;&gt;</code></pre>
+									<div class="form-examples__submit">
+										<input type="submit" name="submit-btn" value="Enviar">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 				<section class="wrap wrap--red">
 					<h1>Especificando diferentes versiones de HTML</h1>
+				</section>
+				<section class="wrap">
+					<div><img src="lib/images/doctypes.png" alt=""></div>
+				</section>
+				<section class="wrap wrap--red">
+					<h1>Atributos Universales</h1>
+				</section>
+				<section class="wrap">
+					<div class="atributos-universales">
+						<h2>IDs y Classes</h2>
+						<pre><code>&lt;div id=&quot;block&quot;&gt;&lt;/div&gt;</code></pre>
+						<pre><code>&lt;div class=&quot;block&quot;&gt;&lt;/div&gt;</code></pre>
+					</div>
+				</section>
+				<section class="wrap wrap--red">
+					<h1>Agrupando textos y elementos</h1>
+				</section>
+				<section class="agrupando-elementos">
+					<div class="wrap">
+						<pre class="item"><code>&lt;div&gt;&lt;/div&gt;</code></pre>
+						<div class="item">
+							<img src="lib/images/agrupando-elementos.png" alt="">
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
