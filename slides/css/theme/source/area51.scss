@@ -69,10 +69,13 @@ section.has-dark-background {
 		&__compatibilidad {
 			margin-top: 150px;
 		}
-		&__multimedia {
+		&__multimedia, &__meta {
 			pre {
 				font-size: 2em;
 			}
+		}
+		&__iframe {
+			width: 100%;
 		}
 	}
 	.item {

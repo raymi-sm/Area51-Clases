@@ -314,8 +314,11 @@ body {
 .reveal .wrap__compatibilidad {
   margin-top: 150px; }
 
-.reveal .wrap__multimedia pre {
+.reveal .wrap__multimedia pre, .reveal .wrap__meta pre {
   font-size: 2em; }
+
+.reveal .wrap__iframe {
+  width: 100%; }
 
 .reveal .item {
   display: inline-block;
