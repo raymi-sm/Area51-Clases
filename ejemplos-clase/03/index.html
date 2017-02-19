@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplos Clase 03</title>
+</head>
+<body>
+  <section class="formularios">
+    <h1>Validación de Formularios</h1>
+    <form>
+      <fieldset>
+        <legend>Login</legend>
+        <div>
+          <label for="Nombre">Usuario</label>
+          <input type="text" name="nombre" required placeholder="Escribe aquí tu usuario" pattern="[a-z]{2,15}" title="Tu nombre de usuario tiene que ser mínimo de 2 caracteres y todo en minúscula" />
+        </div>
+
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" name="email" required placeholder="ejemplo@correo.com" />
+        </div>
+
+        <div>
+          <label for="Asunto">Contraseña</label>
+          <input type="password" required />
+        </div>
+
+        <div>
+          <label for="Asunto">Color</label>
+          <input type="color" name="color" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos</legend>
+        <div>
+          <label for="Nombre">Nombres y Apellidos</label>
+          <input type="text" name="nombre" required />
+        </div>
+
+        <div>
+          <label for="Email">Teléfono</label>
+          <input type="number" name="email" />
+        </div>
+
+        <div>
+          <label for="Asunto">Cumpleaños</label>
+          <input type="date" name="birthdays" />
+        </div>
+
+        <div>
+          <label for="Url">Url</label>
+          <input type="url" name="url" required>
+        </div>
+      </fieldset>
+
+      <input type="submit" name="submit" value="Enviar" class="button blue medium contact-btn">
+
+    </form>
+  </section>
+
+  <section class="audio-video dark">
+    <h1>Video y Audio</h1>
+    <div class="video-wrap">
+      <video width="700" autoplay controls muted loop poster="multimedia/img/poster-video.png">
+        <source src="multimedia/video/dragonite-sample-video.mp4" />
+        <source src="multimedia/video/dragonite-sample-video.ogv" />
+        <source src="multimedia/video/dragonite-sample-video.webm" />
+      </video>
+    </div>
+
+    <div class="audio-wrap">
+      <audio autoplay controls muted loop>
+        <source src="multimedia/audio/audio-sample.mp3" />
+        <source src="multimedia/audio/audio-sample.ogg" />
+        <source src="multimedia/audio/audio-sample.wav" />
+      </audio>
+    </div>
+  </section>
+</body>
+</html>

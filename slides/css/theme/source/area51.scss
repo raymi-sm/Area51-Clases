@@ -57,7 +57,17 @@ section.has-dark-background {
     		width: 100%;
     		text-align: center;
 			}
-
+		}
+		&__required {
+			.item {
+				padding: 30px;
+				&:first-child {
+					margin-right: 30px;
+				}
+			}
+		}
+		&__compatibilidad {
+			margin-top: 150px;
 		}
 	}
 	.item {

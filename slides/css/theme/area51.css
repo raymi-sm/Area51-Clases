@@ -306,6 +306,14 @@ body {
   width: 100%;
   text-align: center; }
 
+.reveal .wrap__required .item {
+  padding: 30px; }
+  .reveal .wrap__required .item:first-child {
+    margin-right: 30px; }
+
+.reveal .wrap__compatibilidad {
+  margin-top: 150px; }
+
 .reveal .item {
   display: inline-block;
   vertical-align: top; }
