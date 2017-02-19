@@ -314,6 +314,9 @@ body {
 .reveal .wrap__compatibilidad {
   margin-top: 150px; }
 
+.reveal .wrap__multimedia pre {
+  font-size: 2em; }
+
 .reveal .item {
   display: inline-block;
   vertical-align: top; }

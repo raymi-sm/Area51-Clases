@@ -69,6 +69,11 @@ section.has-dark-background {
 		&__compatibilidad {
 			margin-top: 150px;
 		}
+		&__multimedia {
+			pre {
+				font-size: 2em;
+			}
+		}
 	}
 	.item {
 		display: inline-block;
