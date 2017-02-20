@@ -61,7 +61,7 @@ section.has-dark-background {
 		&__required {
 			.item {
 				padding: 30px;
-				&:first-child {
+				&:last-child {
 					margin-right: 30px;
 				}
 			}

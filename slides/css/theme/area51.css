@@ -308,7 +308,7 @@ body {
 
 .reveal .wrap__required .item {
   padding: 30px; }
-  .reveal .wrap__required .item:first-child {
+  .reveal .wrap__required .item:last-child {
     margin-right: 30px; }
 
 .reveal .wrap__compatibilidad {
