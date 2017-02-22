@@ -85,13 +85,12 @@ section.has-dark-background {
 		&__description {
 			width: 550px;
 			text-align: left;
-			span, code {
-				color: $green;
-				font-weight: bolder;
-			}
 			img.item {
 				vertical-align: middle;
 			}
+      &--full {
+        width: 100%;
+      }
 		}
 		&__css-externo {
 			width: 550px;
@@ -204,4 +203,10 @@ section.has-dark-background {
 		}
 		margin-top: 120px;
 	}
+  .wrap__description, .wrap__description--full {
+    span, code {
+      color: $green;
+      font-weight: bolder;
+    }
+  }
 }
