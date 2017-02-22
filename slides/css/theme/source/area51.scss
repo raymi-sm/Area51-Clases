@@ -85,7 +85,7 @@ section.has-dark-background {
 		&__description {
 			width: 550px;
 			text-align: left;
-			span {
+			span, code {
 				color: $green;
 				font-weight: bolder;
 			}
@@ -113,6 +113,15 @@ section.has-dark-background {
 				right: 250px;
 				display: block;
 				padding: 3px 14px;
+			}
+		}
+		&__cajas {
+			h3 {
+				text-align: center;
+			}
+			ul {
+				margin-top: 40px;
+				width: 250px;
 			}
 		}
 	}

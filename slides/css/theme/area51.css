@@ -326,7 +326,7 @@ body {
 .reveal .wrap__description {
   width: 550px;
   text-align: left; }
-  .reveal .wrap__description span {
+  .reveal .wrap__description span, .reveal .wrap__description code {
     color: #9bd005;
     font-weight: bolder; }
   .reveal .wrap__description img.item {
@@ -351,6 +351,13 @@ body {
     right: 250px;
     display: block;
     padding: 3px 14px; }
+
+.reveal .wrap__cajas h3 {
+  text-align: center; }
+
+.reveal .wrap__cajas ul {
+  margin-top: 40px;
+  width: 250px; }
 
 .reveal .item {
   display: inline-block;
