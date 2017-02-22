@@ -289,10 +289,13 @@ body {
 .reveal pre {
   text-align: center; }
 
-.reveal .wrap--green {
+.reveal .block--magenta {
+  background-color: #e80b63; }
+
+.reveal .wrap--green, .reveal .wrap .block--green {
   background: #9bd005; }
 
-.reveal .wrap--blue {
+.reveal .wrap--blue, .reveal .wrap .block--blue {
   background: #1e83ad; }
 
 .reveal .wrap--red {
@@ -319,6 +322,35 @@ body {
 
 .reveal .wrap__iframe {
   width: 100%; }
+
+.reveal .wrap__description {
+  width: 550px;
+  text-align: left; }
+  .reveal .wrap__description span {
+    color: #9bd005;
+    font-weight: bolder; }
+  .reveal .wrap__description img.item {
+    vertical-align: middle; }
+
+.reveal .wrap__css-externo {
+  width: 550px;
+  position: relative; }
+  .reveal .wrap__css-externo span {
+    position: absolute;
+    display: block;
+    top: 0;
+    padding: 3px 14px;
+    right: 10px; }
+
+.reveal .wrap__css-interno {
+  margin-top: 100px;
+  position: relative; }
+  .reveal .wrap__css-interno span {
+    position: absolute;
+    top: -10px;
+    right: 250px;
+    display: block;
+    padding: 3px 14px; }
 
 .reveal .item {
   display: inline-block;

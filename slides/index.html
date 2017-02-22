@@ -54,53 +54,158 @@
 				<section class="wrap wrap--blue">
 					<h1>Reglas CSS</h1>
 				</section>
-				<section class="wrap">
+				<section class="wrap wrap__css-rules">
 					<div class="wrap__content">
-						<img src="lib/images/css-regla.png" alt="">
+						<div class="wrap__description item">
+							<p><span>Selectores:</span> indican a qué elemento se aplica la regla.</p>
+							<p><span>Declaraciones:</span> indican cómo deben estilizarse los elementos mencionados en el selector.</p>
+						</div>
+						<img src="lib/images/css-regla.png" class="item" width="550">
 					</div>
 				</section>
 				<section class="wrap">
 					<div class="wrap__content">
-						<img src="lib/images/css-reglas-2.png" alt="">
+						<div class="wrap__description item">
+							<p><span>Propiedades:</span> indican los aspectos del elemento que se quiere cambiar.</p>
+							<p><span>Valores:</span> especifican la configuración que desea utilizar para las propiedades elegidas.</p>
+						</div>
+						<img src="lib/images/css-reglas-2.png" class="item" width="550">
+					</div>
+				</section>
+				<section class="wrap wrap--blue">
+					<h1>CSS Externo</h1>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content wrap__code">
+						<div class="wrap__css-externo item">
+							<span class="block--blue">HTML</span>
+							<img src="lib/images/css-externo-2.png" alt="">
+						</div>
+						<div class="wrap__css-externo item">
+							<span class="block--magenta">CSS</span>
+							<img src="lib/images/css-externo.png">
+						</div>
+					</div>
+				</section>
+				<section class="wrap wrap--blue">
+					<h1>CSS Interno</h1>
+				</section>
+				<section class="wrap">
+					<div class="wrap__css-interno">
+						<span class="block--green">HTML + CSS</span>
+						<img src="lib/images/css-interno.png" width="500">
+					</div>
+				</section>
+				<section class="wrap wrap--blue">
+					<h1>Tipos de Selectores</h1>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content wrap__selectors">
+						<table>
+							<tr>
+								<th>Selector</th>
+								<th>Significado</th>
+								<th>Ejemplo</th>
+							</tr>
+							<tr>
+								<td>Universal</td>
+								<td>Aplica a todos los elementos del documento HTML</td>
+								<td><code>* {}</code></td>
+							</tr>
+							<tr>
+								<td>De Tipo</td>
+								<td>Aplica al nombre del elemento</td>
+								<td><code>h1, p, ul, li {}</code></td>
+							</tr>
+							<tr>
+								<td>Clase</td>
+								<td>Aplica al elemento con el mismo valor del atributo clase</td>
+								<td><code>.nota {}</code></td>
+							</tr>
+							<tr>
+								<td>ID</td>
+								<td>Aplica al elemento con el mismo valor del atributo ID</td>
+								<td><code>#nota {}</code></td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content wrap__selectors">
+						<table>
+							<tr>
+								<th>Selector</th>
+								<th>Significado</th>
+								<th>Ejemplo</th>
+							</tr>
+							<tr>
+								<td>Hijo Directo</td>
+								<td>Coincide con un elemento que es hijo directo de otro</td>
+								<td><code>li > a {}</code></td>
+							</tr>
+							<tr>
+								<td>Descendiente</td>
+								<td>Coincide con un elemento que es un descendiente de otro elemento específico</td>
+								<td><code>h1, p, ul, li {}</code></td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<section class="wrap wrap--blue">
+					<div class="wrap__content">
+						<h1>Reglas CSS y la Cascada</h1>
+					</div>
+				</section>
+				<section class="wrap wrap__cascada">
+					<div class="wrap__content">
+						<p>Cuando más de una regla es aplicada al mismo elemento, es importante entender cual de las reglas va a tomar precedencia</p>
+						<ul>
+							<li><span class="block--green">La última regla, gana:</span> Se aplica en casos en donde los selectores son idénticos.</li>
+							<li><span class="block--green">Especificación:</span> Para el caso en donde un selector es más específico que los demás</li>
+							<li><code class="block--green">!important:</code> Para el caso en que se quiera forzar una regla a que tome precedencia</li>
+						</ul>
+					</div>
+				</section>
+				<section class="wrap wrap--blue">
+					<div class="wrap__content">
+						<h1>Herencia</h1>
 					</div>
 				</section>
 				<section class="wrap wrap--red">
 					<h1>CSS: Color</h1>
 				</section>
-				<section class="wrap wrap--blue">
-					<h1>Formatos</h1>
-				</section>
-				<section class="wrap__required">
+				<section class="wrap">
 					<div class="wrap__content">
-						<h1 class="wrap--green item">MP4</h1>
-						<h1 class="wrap--blue item">WEBM</h1>
+						<table>
+							<tr>
+								<th>Tipo</th>
+								<th>Significado</th>
+								<th>Ejemplo</th>
+							</tr>
+							<tr>
+								<td>RGB</td>
+								<td>Valores de rojo, verde y azul representados como números que van de 0 a 255</td>
+								<td><code>rgb(102, 205, 170)</code></td>
+							</tr>
+							<tr>
+								<td>Hexadecimal</td>
+								<td>Valores de rojo, verde y azul representados en código hexadecimal</td>
+								<td><code>#66cdaa</code></td>
+							</tr>
+							<tr>
+								<td>Nombre</td>
+								<td>Nombres predeterminados para algunos colores en CSS</td>
+								<td><code>Red</code></td>
+							</tr>
+						</table>
 					</div>
 				</section>
-				<section class="wrap__required">
-					<div class="wrap__content">
-						<h1 class="wrap--green item">MP3</h1>
-						<h1 class="wrap--blue item">WAV</h1>
-					</div>
-				</section>
 				<section class="wrap wrap--blue">
-					<h1>Codecs</h1>
+					<h1>Colores en primer plano</h1>
 				</section>
-				<section class="wrap__required">
+				<section class="wrap">
 					<div class="wrap__content">
-						<h1 class="wrap--green item">H264</h1>
-						<h1 class="wrap--blue item">Vorbis</h1>
-						<h1 class="wrap--green item">V8</h1>
-					</div>
-				</section>
-				<section class="wrap wrap--blue">
-					<h1>HTML5</h1>
-				</section>
-				<section class="wrap wrap__multimedia">
-					<div class="wrap__content">
-						<div class="wrap__code wrap__meta">
-							<pre><code>&lt;video&gt;</code></pre>
-							<pre><code>&lt;audio&gt;</code></pre>
-						</div>
+						<p><code class="block--blue">color:</code> Propiedad para especificar color al texto dentro de un elemento.</p>
 					</div>
 				</section>
 				<section class="wrap wrap--blue">
