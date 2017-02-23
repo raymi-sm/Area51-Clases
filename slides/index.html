@@ -38,14 +38,13 @@
 						<h1>Fuentes Especiales e Iconos</h1>
 					</div>
 				</section>
-				<section class="wrap wrap--blue">
-					<div class="wrap__content">
-						<h1>Formatos de Fuentes</h1>
-					</div>
-				</section>
 				<section class="wrap">
-					<div class="wrap__content">
-						
+					<h1>Formatos de Fuentes</h1>
+					<div class="wrap__content wrap__font-formats">
+						<div class="wrap--green item">SVG</div>
+						<div class="wrap--blue item">EOT</div>
+						<div class="wrap--green item">TTF/OTF</div>
+						<div class="wrap--blue item">WOFF</div>
 					</div>
 				</section>
 				<section class="wrap">
@@ -81,12 +80,7 @@
         <section class="wrap wrap--red">
           <h1>Selectores de Atributos</h1>
         </section>
-        <section class="wrap">
-          <div class="wrap__content">
-            <p>Los selectores de atributo existen para crear reglas CSS a aquellos elementos que tienen un mismo valor de atributo</p>
-          </div>
-        </section>
-				<section class="wrap wrap--blue">
+				<section class="wrap">
 					<table>
             <tr>
               <th>Selector</th>
@@ -104,6 +98,88 @@
               <td><code>p[class="perro"]</code></td>
             </tr>
           </table>
+				</section>
+				<section class="wrap wrap--red">
+					<h1>CSS: Listas</h1>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content">
+						<table>
+							<tr>
+								<th>Tipo</th>
+								<th>Propiedad</th>
+								<th>Valores</th>
+							</tr>
+							<tr>
+								<td>Desordenadas</td>
+								<td><code>list-style-type</code></td>
+								<td><code>none</code>, <code>disc</code>, <code>circle</code>, <code>square</code></td>
+							</tr>
+							<tr>
+								<td>Ordenadas</td>
+								<td><code>list-style-type</code></td>
+								<td><code>decimal</code>, <code>decimal-leading-zero</code>, <code>lower-alpha</code>, <code>upper-alpha</code> <code>lower-roman</code>, upper-roman</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content">
+						<table>
+							<tr>
+								<th>Tipo</th>
+								<th>Propiedad</th>
+								<th>Valores</th>
+							</tr>
+							<tr>
+								<td>Desordenadas / Ordenadas</td>
+								<td>list-style-image</td>
+								<td><code>url(ruta/de/imagen.png)</code></td>
+							</tr>
+							<tr>
+								<td>Desordenadas / Ordenadas</td>
+								<td>list-style-position</td>
+								<td><code>outside</code>, <code>inside</code></td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content">
+						<h2>Atajo de Propiedad</h2>
+						<div><code>list-style: style image position;</code></div>
+					</div>
+				</section>
+				<section class="wrap wrap--red">
+					<h1>CSS: Tablas</h1>
+				</section>
+				<section class="wrap">
+					<div class="wrap__content">
+						<table>
+							<tr>
+								<th>Propiedad</th>
+								<th>Valores</th>
+							</tr>
+							<tr>
+								<td><code>empty-cells</code></td>
+								<td><code>show, hide, inherit</code></td>
+							</tr>
+							<tr>
+								<td><code>border-collapse</code></td>
+								<td><code>collapse</code>, <code>separate</code></td>
+							</tr>
+							<tr>
+								<td><code>border-spacing</code></td>
+								<td>pixeles</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+				<section class="wrap wrap--red">
+					<div class="wrap__content">
+						<h1>CSS: Formularios</h1>
+					</div>
+					<p>No existen propiedades que se dirijan específicamente hacia los formularios, con la excepción del uso de la pseudo clase <code>:focus</code> que solamente funciona con entradas de formularios ('inputs')</p>
 				</section>
 			</div>
 		</div>

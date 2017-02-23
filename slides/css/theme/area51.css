@@ -309,20 +309,6 @@ body {
   width: 100%;
   text-align: center; }
 
-.reveal .wrap__required .item {
-  padding: 30px; }
-  .reveal .wrap__required .item:last-child {
-    margin-right: 30px; }
-
-.reveal .wrap__compatibilidad {
-  margin-top: 150px; }
-
-.reveal .wrap__multimedia pre, .reveal .wrap__meta pre {
-  font-size: 2em; }
-
-.reveal .wrap__iframe {
-  width: 100%; }
-
 .reveal .wrap__description {
   width: 550px;
   text-align: left; }
@@ -331,91 +317,15 @@ body {
   .reveal .wrap__description--full {
     width: 100%; }
 
-.reveal .wrap__css-externo {
-  width: 550px;
-  position: relative; }
-  .reveal .wrap__css-externo span {
-    position: absolute;
-    display: block;
-    top: 0;
-    padding: 3px 14px;
-    right: 10px; }
+.reveal .wrap__font-formats .item {
+  padding: 30px; }
 
-.reveal .wrap__css-interno {
-  margin-top: 100px;
-  position: relative; }
-  .reveal .wrap__css-interno span {
-    position: absolute;
-    top: -10px;
-    right: 250px;
-    display: block;
-    padding: 3px 14px; }
-
-.reveal .wrap__cajas h3 {
-  text-align: center; }
-
-.reveal .wrap__cajas ul {
-  margin-top: 40px;
-  width: 250px; }
+.reveal .wrap__lists {
+  margin-bottom: 30px; }
 
 .reveal .item {
   display: inline-block;
   vertical-align: top; }
-
-.reveal .notes code {
-  color: #9bd005; }
-
-.reveal .form-examples {
-  box-sizing: border-box;
-  margin-top: 70px; }
-  .reveal .form-examples ul {
-    margin-top: 15px; }
-  .reveal .form-examples pre {
-    padding: 0;
-    margin: 0; }
-  .reveal .form-examples input {
-    width: 100%;
-    padding: 5px 0 4px 40px;
-    margin-top: 20px;
-    display: block;
-    font-size: 1em; }
-  .reveal .form-examples__text {
-    width: 40%;
-    padding: 0 0 23px 0; }
-  .reveal .form-examples__files {
-    -webkit-appearance: initial;
-    background-color: initial;
-    padding: initial;
-    border: initial; }
-  .reveal .form-examples.checkboxes {
-    font-size: 0.7em; }
-    .reveal .form-examples.checkboxes input {
-      display: inline;
-      width: 7%; }
-  .reveal .form-examples.btn input {
-    display: inline;
-    width: 25%;
-    padding-left: 0; }
-  .reveal .form-examples__radio, .reveal .form-examples__password {
-    margin-top: 10px;
-    color: white; }
-  .reveal .form-examples .radio-btn, .reveal .form-examples .checkbox-btn {
-    width: 100%;
-    font-size: 0.8em; }
-  .reveal .form-examples__submit input {
-    display: block !important;
-    height: 100px; }
-
-.reveal .atributos-universales pre {
-  font-size: 1.7em; }
-
-.reveal .agrupando-elementos {
-  margin-top: 120px; }
-  .reveal .agrupando-elementos pre {
-    font-size: 1.5em;
-    width: 40%;
-    margin-top: 200px;
-    margin-right: 30px; }
 
 .reveal .wrap__description span, .reveal .wrap__description code, .reveal .wrap__description--full span, .reveal .wrap__description--full code {
   color: #9bd005;
