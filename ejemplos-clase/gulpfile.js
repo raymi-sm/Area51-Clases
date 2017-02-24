@@ -3,22 +3,23 @@ var gulp    = require('gulp'),
     sass    = require ('gulp-sass');
     //babel   = require('gulp-babel');
 
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', function() {
 
     browserSync.init({
-        server: "03",
+        server: "05",
         port: 1504
     });
 
-    gulp.watch("03/*.scss", ['sass']).on('change', browserSync.reload);
-    gulp.watch("03/*.html").on('change', browserSync.reload);
-    gulp.watch("03/*.js").on('change', browserSync.reload);
+    //gulp.watch("05/*.scss", ['sass']).on('change', browserSync.reload);
+    gulp.watch("05/css/*.css").on('change', browserSync.reload);
+    gulp.watch("05/*.html").on('change', browserSync.reload);
+    gulp.watch("05/*.js").on('change', browserSync.reload);
 });
 
-gulp.task("sass", function(){
-  return gulp.src('03/*.scss')
+/*gulp.task("sass", function(){
+  return gulp.src('05/*.scss')
   .pipe(sass({ outputStyle: 'compressed'}))
-  .pipe(gulp.dest('03/'));
-});
+  .pipe(gulp.dest('05/'));
+});*/
 
 gulp.task('default', ['serve']);

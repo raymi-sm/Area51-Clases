@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplos Clase 05</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <div class="ejemplos ejemplo-1">
+      <h1 class="titles"><code>@font-face</code> e íconos</h1>
+      <h2 class="titles">Este título va a llevar una la fuente Roboto</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam obcaecati, libero nostrum iste eligendi mollitia accusamus, doloribus aliquam, sunt itaque tempore natus. Quod dignissimos est fuga quidem deserunt nobis blanditiis!</p>
+    </div>
+
+    <div class="ejemplos ejemplo-2">
+      <h1 class="titles">Pseudo Elementos y Clases</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi dolore possimus veniam eius iure sint a inventore, ab unde porro sed repellendus deserunt earum ratione, nemo obcaecati harum vero!</p>
+
+      <ul class="menu">
+        <li class="item"><a href="#" class="link">Links</a></li>
+        <li class="item"><a href="#" class="link">Links</a></li>
+        <li class="item"><a href="#" class="link">Links</a></li>
+        <li class="item"><a href="#" class="link">Links</a></li>
+      </ul>
+    </div>
+
+    <div class="ejemplos ejemplo-3">
+      <h1>Selectores de Atributos</h1>
+      <p class="description-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi dolore possimus veniam eius iure sint a inventore, ab unde porro sed repellendus deserunt earum ratione, nemo obcaecati harum vero!</p>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi dolore possimus veniam eius iure sint a inventore, ab unde porro sed repellendus deserunt earum ratione, nemo obcaecati harum vero!</p>
+    </div>
+
+    <div class="ejemplos ejemplo-4">
+      <h1>Estilos para listas</h1>
+      <ul>
+        <li class="list-style-type">Items</li>
+        <li class="list-style-images">Items</li>
+        <li>Items</li>
+        <li>Items</li>
+        <li>Items</li>
+      </ul>
+
+      <ol>
+        <li class="list-style-type">Items</li>
+        <li class="list-style-images">Items</li>
+        <li>Items</li>
+        <li>Items</li>
+        <li>Items</li>
+      </ol>
+    </div>
+
+    <div class="ejemplos ejemplo-5">
+      <h1>Estilos para tablas</h1>
+      <table class="uno">
+        <tr>
+          <th></th>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+        </tr>
+        <tr>
+          <td>Celda 1</td>
+          <td>Celda 2</td>
+          <td>Celda 3</td>
+        </tr>
+      </table>
+
+      <table class="dos">
+        <tr>
+          <th></th>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+        </tr>
+        <tr>
+          <td>Celda 1</td>
+          <td>Celda 2</td>
+          <td>Celda 3</td>
+        </tr>
+      </table>
+
+      <table class="tres">
+        <tr>
+          <th>Encabezado 1</th>
+          <th>Encabezado 2</th>
+          <th>Encabezado 3</th>
+          <th>Encabezado 4</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="ejemplos ejemplo-6">
+      <section class="formularios">
+				<h1>Formulario</h1>
+				<form>
+					<fieldset>
+					<legend>Login</legend>
+					<div class="input-wrap">
+						<i class="fa fa-users"></i>
+						<label for="Nombre">Usuario</label>
+						<input type="text" name="nombre" required placeholder="Escribe aquí tu usuario" pattern="[a-z]{2,15}" title="Tu nombre de usuario tiene que ser mínimo de 2 caracteres y todo en minúscula" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-envelope-o"></i>
+						<label for="Email">Email</label>
+						<input type="email" name="email" required placeholder="ejemplo@correo.com" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-ellipsis-h"></i>
+						<label for="Asunto">Contraseña</label>
+						<input type="password" required />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-ellipsis-h"></i>
+						<label for="Asunto">Color</label>
+						<input type="color" name="color" />
+					</div>
+					</fieldset>
+
+					<fieldset>
+					<legend>Datos</legend>
+					<div class="input-wrap">
+						<i class="fa fa-users"></i>
+						<label for="Nombre">Nombres y Apellidos</label>
+						<input type="text" name="nombre" required />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-envelope-o"></i>
+						<label for="Email">Teléfono</label>
+						<input type="number" name="email" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-ellipsis-h"></i>
+						<label for="Asunto">Cumpleaños</label>
+						<input type="date" name="birthdays" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-ellipsis-h"></i>
+						<label for="Url">Url</label>
+						<input type="url" name="url" required>
+					</div>
+
+					</fieldset>
+
+					<input type="submit" name="submit" value="Enviar" class="button blue medium contact-btn">
+
+				</form>
+			</section>
+    </div>
+  </div>
+</body>
+</html>

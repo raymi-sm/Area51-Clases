@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Generales  */
+.container {
+  width: 1200px;
+  margin: 30px auto;
+}
+h1 {
+  text-align: center;
+}
+h2.titles {
+  font-size: 3.5em;
+}
+.description, .description-3 {
+  font-size: 2.5em;
+}
+
+.ejemplos {
+  margin-bottom: 80px;
+  border: 2px solid black;
+  padding: 30px;
+}
+/* Fin Estilos Generales  */
+
+.titles, .description {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Pseudo Elementos */
+
+.ejemplo-2 .description::first-letter{
+  color: green;
+  font-size: 5em;
+}
+
+.ejemplo-2 .description::first-line{
+  color: blue;
+}
+
+.ejemplo-2 .titles::after {
+  content:'Holap';
+  background: red;
+  width: 30px;
+  height: 30px;
+  color:white;
+}
+
+.ejemplo-2 .titles::before {
+  content:'Chau';
+  background: blue;
+  width: 30px;
+  height: 30px;
+  color:white;
+}
+
+/* Fin Pseudo Elementos */
+
+/* Pseudo Clases */
+
+.menu:first-child {
+  background: #cdcdcd;
+}
+
+.menu li:first-child{
+  background: purple;
+}
+
+.link {
+  font-size: 2.5em;
+  color: red;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: green;
+}
+
+.link:hover {
+  color: blue;
+  background: purple;
+}
+
+/* Fin Pseudo Clases */
+
+/* Selectores de Atributos */
+
+p[class]{
+  background: yellow;
+}
+
+p[class="description-3"] {
+  background: orange;
+}
+
+/* Fin Selectores de Atributos */
+
+/* Listas */
+
+li.list-style-type{
+  list-style-type: disc;
+}
+
+.list-style-images {
+  list-style-image: url('../images/instagram-circle.png');
+  width: 10px;
+  height: 10px;
+}
+
+ol li.list-style-type {
+  list-style-type: armenian;
+}
+
+/* Fin Listas */
+
+/* Tablas */
+
+table {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+table th, table td {
+  padding: 15px;
+}
+
+table th {
+  border: 3px solid black;
+}
+
+table td {
+  border: 3px solid blue;
+}
+
+table.uno {
+  empty-cells: hide;
+  border-spacing: 5px 15px;
+}
+
+table.dos {
+  empty-cells: show;
+  border-collapse: collapse;
+}
+
+table.tres {
+  border-collapse: collapse;
+}
+
+table.tres tr:nth-child(odd) {
+  background: #cdcdcd;
+}
+
+/* Fin Tablas */
+
+/* Formularios */
+
+form {
+  width: 100%;
+  margin: 0 auto; }
+
+fieldset {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 20px;
+	margin-right: 10px;
+}
+
+legend {
+	font-size: 2em;
+	text-align: center;
+}
+
+.button {
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(26, 37, 46, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  color: white; }
+  .button.medium {
+    padding: 10px; }
+  .button.blue {
+    border: 1px solid #02A2E5;
+    background: #007EEE; }
+  .button.white {
+    background: white;
+    color: #007EEE; }
+
+.contact {
+  color: white; }
+  .contact label {
+    padding-left: 20px;
+    margin-bottom: 15px; }
+  .contact i {
+    display: block; }
+  .contact .fa::before {
+    position: absolute;
+    top: 7px; }
+
+.contact-btn {
+  font-size: 1em;
+  margin: 30px auto;
+  display: block; }
+  .contact-btn:hover {
+    background: white;
+    color: #02A2E5;
+    cursor: pointer; }
+
+.input-wrap {
+  margin: 30px 0;
+  position: relative; }
+  .input-wrap label, .input-wrap textarea,
+  .input-wrap input[type="text"],
+  .input-wrap input[type="password"],
+  .input-wrap input[type="url"],
+  .input-wrap input[type="email"],
+  .input-wrap input[type="number"],
+  .input-wrap input[type="date"]{
+    display: block;
+    width: 85%; }
+  .input-wrap label {
+    font-size: 1.5em; }
+  .input-wrap input {
+    padding: 15px 15px 15px 35px;
+    background: #eee;
+  }
+
+  .input-wrap input[type="color"] {
+    padding: 0;
+  }
+
+  .input-wrap input:required {
+    background: pink;
+  }
+
+	.input-wrap input[type="text"]:focus,
+  .input-wrap input[type="password"]:focus,
+  .input-wrap input[type="email"]:focus {
+  	background-color: #fff; }
+
+  .input-wrap input[type="text"]:valid,
+  .input-wrap input[type="password"]:valid,
+  .input-wrap input[type="email"]:valid,
+  .input-wrap input[type="url"]:valid {
+  	background-image: url(../images/check.svg);
+  	background-repeat: no-repeat;
+  	background-size: 20px;
+    background-position: 10px 12px;
+     }
+
+	.input-wrap input[type="text"]:invalid:not(:focus),
+  .input-wrap input[type="password"]:invalid:not(:focus),
+  .input-wrap input[type="email"]:invalid:not(:focus),
+  .input-wrap input[type="url"]:invalid:not(:focus) {
+  	background-image: url(../images/Icon-x.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px 12px; }
+  }
+
+
+
+  .input-wrap input, .input-wrap textarea {
+    border-radius: 6px;
+    margin-bottom: 7px;
+    border: none; }
+
+  .input-wrap .textarea {
+    resize: none;
+    height: 100px;
+    padding: 1
+
+a/es* Fin Formularios */
