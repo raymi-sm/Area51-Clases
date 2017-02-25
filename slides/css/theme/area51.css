@@ -317,16 +317,10 @@ body {
   .reveal .wrap__description--full {
     width: 100%; }
 
-.reveal .wrap__font-formats .item {
-  padding: 30px; }
-
-.reveal .wrap__lists {
-  margin-bottom: 30px; }
-
 .reveal .item {
   display: inline-block;
   vertical-align: top; }
 
-.reveal .wrap__description span, .reveal .wrap__description code, .reveal .wrap__description--full span, .reveal .wrap__description--full code {
+.reveal .wrap__description span, .reveal .wrap__description--full span {
   color: #9bd005;
   font-weight: bolder; }

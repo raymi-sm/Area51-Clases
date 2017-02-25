@@ -74,21 +74,14 @@ section.has-dark-background {
         width: 100%;
       }
 		}
-		&__font-formats {
-			.item {
-				padding: 30px;
-			}
-		}
-		&__lists {
-			margin-bottom: 30px;
-		}
+
 	}
 	.item {
 		display: inline-block;
 		vertical-align: top;
 	}
   .wrap__description, .wrap__description--full {
-    span, code {
+    span {
       color: $green;
       font-weight: bolder;
     }
