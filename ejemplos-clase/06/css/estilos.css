@@ -1,0 +1,26 @@
+body, html, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p, h2 , h1{
+  margin-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  width: 230px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  background-color: #efefef;
+}
+
+.container {
+  width: 1200px;
+  margin: 30px auto;
+}
