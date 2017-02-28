@@ -24,3 +24,58 @@ p {
   width: 1200px;
   margin: 30px auto;
 }
+
+.ejemplos {
+  width: 500px;
+  margin: 20px auto;
+  background-color: orange;
+}
+
+/* Ejemplo 2 */
+
+.rojo{
+  width: 400px;
+  height:400px;
+  background-color: red;
+  position: static;
+} 
+
+.azul{
+  width: 200px;
+  height:200px;
+  background-color: blue;
+} 
+
+/* Ejemplo 3 */
+
+header {
+  background-color: green;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header a {
+  background-color: green;
+  padding: 30px;
+  color: white;
+
+}
+
+/* Ejemplo 4 */
+
+.clear {
+  clear: both;
+}
+
+.ejemplo-4 {
+  background-image: url("../images/adventureTime.jpg");
+  width: 1200px;
+  height: 500px;
+}
+
+.caption{
+  color: black;
+}
