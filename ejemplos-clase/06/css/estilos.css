@@ -12,14 +12,6 @@ h1 {
   text-align: center;
 }
 
-p {
-  width: 230px;
-  float: left;
-  margin: 5px;
-  padding: 5px;
-  background-color: #efefef;
-}
-
 .container {
   width: 1200px;
   margin: 30px auto;
@@ -31,26 +23,53 @@ p {
   background-color: orange;
 }
 
+/* Ejemplo 1 */
+
+.ejemplo-1 {
+  margin-top: 150px;
+  overflow: hidden;
+}
+
+.ejemplo-1 p {
+    width: 230px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    background-color: #efefef;
+}
+
+.clear {
+  clear: both;
+}
+
 /* Ejemplo 2 */
+
+.ejemplo-2 p {
+  font-size: 1.5em;
+  color: white;
+}
 
 .rojo{
   width: 400px;
   height:400px;
   background-color: red;
-  position: static;
-} 
+  position: relative;
+}
 
 .azul{
   width: 200px;
   height:200px;
   background-color: blue;
-} 
+  position: absolute;
+  top: 80px;
+  left: 70px;
+}
 
 /* Ejemplo 3 */
 
 header {
   background-color: green;
-  padding: 30px;
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,18 +83,34 @@ header a {
 
 }
 
-/* Ejemplo 4 */
-
-.clear {
-  clear: both;
+header ul {
+  float: right;
+  margin-top: 15px;
 }
+
+header li {
+  float: left;
+  list-style: none;
+}
+
+.logo {
+  float: left;
+}
+
+/* Ejemplo 4 */
 
 .ejemplo-4 {
   background-image: url("../images/adventureTime.jpg");
   width: 1200px;
   height: 500px;
+  position: relative;
 }
 
 .caption{
   color: black;
+  background: rgba(0,0,0,0.5);
+  width: 60%;
+  padding: 30px 40px;
+  position: absolute;
+  bottom: 40px;
 }
