@@ -317,21 +317,6 @@ body {
   .reveal .wrap__description--full {
     width: 100%; }
 
-.reveal .wrap__flujos pre {
-  font-size: 1em; }
-
-.reveal .wrap__z-index p {
-  font-size: 0.9em; }
-
-.reveal .wrap__z-index pre {
-  font-size: 2.4em; }
-
-.reveal .wrap__css-images pre {
-  font-size: 1.4em; }
-
-.reveal .wrap__images-atajo pre {
-  font-size: 1em; }
-
 .reveal .item {
   display: inline-block;
   vertical-align: top; }
