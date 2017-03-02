@@ -1,0 +1,201 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 1em/1.5 'Open Sans', sans-serif;
+  color: #373737;
+  background: #eaeaea;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.125em;
+  color: #4a89ca;
+  font-weight: 600;
+  margin: 0;
+}
+h3 {
+  font-size: 1.3em;
+  line-height: 1.25em;
+  margin-top: .85em;
+  margin-bottom: .5em;
+}
+p {
+  font-size: .875em;
+  line-height: 1.4;
+  margin: 0 0 1.5em;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.container {
+  width: 94.02985075%;
+  max-width: 1260px;
+  background: #fff;
+  margin: auto;
+}
+.main-header {
+  text-align: center;
+  padding: 2.8em 0;
+}
+.photo-container {
+  text-align: center;
+  margin-bottom: 4em;
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+}
+.original-pos {
+/*  background-color: lightgrey;*/
+  height: 100%;
+  display: block;
+  line-height: 0;
+}
+/* ---- Page Elements ---- */
+
+.name {
+  font-size: 1.65em;
+  font-weight: 800;
+  margin: 0 0 1.5em;
+  line-height: 1;
+}
+.name span {
+  font-weight: 300;
+  margin-left: -7px;
+}
+.logo {
+  width: 45px;
+  margin-bottom: .4em;
+  cursor: pointer;
+}
+.photo {
+  position: relative;
+  line-height: 0;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+.photo-container img {
+  max-width: 100%;
+}
+.button {
+  color: #4a89ca;
+  width: 70%;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border: 2px solid #4a89ca;
+  border-radius: .5em;
+  margin: auto;
+}
+
+/* =================================
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+	opacity: 0;
+	transition: opacity .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+/* =================================
+  Button Transitions
+==================================== */
+
+.button {
+	transition: background .3s, color .3s;
+}
+.button:hover {
+	color: #fff;
+	background: #4a89ca;
+}
+
+/* =================================
+  Image Transforms & Transitions
+==================================== */
+
+/* -- Row 1 --------- */
+
+/*img {
+	transition: transform .5s;
+}
+
+img:hover {
+	transform: translate(50%);
+}*/
+
+/* -- Row 2 --------- */
+
+/*.photo img {
+	transform-origin: 0 0;
+}
+
+.photo:hover img {
+	transform: scale(1.2);
+}*/
+
+/* -- Row 3 --------- */
+
+/*.slide .photo-overlay, .slide img {
+	transition: transform .6s;
+}
+
+.slide .photo-overlay {
+	transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+	transform: translateX(0);
+}*/
+
+/* -- Row 4 --------- */
+
+.content-3d {
+	perspective: 700px;
+}
+
+/*.content-3d .photo {
+	transform: rotateX(-5deg);
+}*/
+
+.content-3d .photo {
+	transition: transform 1s ease-out;
+	transform-style: preserve-3d;
+}
+
+.content-3d .photo:hover {
+	transform: rotateY(-180deg);
+}
+
+.content-3d .photo .side-a, .content-3d .photo .side-b {
+	backface-visibility: hidden;
+}
+
+.content-3d .photo .side-b {
+	transform: rotateY(180deg);
+}
+
+/* -- Logo ---------- */
+
+/*.logo:hover {
+	transform: rotate(-20deg);
+}*/
