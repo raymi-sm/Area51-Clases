@@ -135,23 +135,24 @@ p {
 
 /* -- Row 1 --------- */
 
-/*img {
-	transition: transform .5s;
+.col.first img {
+  transition: transform .5s;
 }
 
-img:hover {
-	transform: translate(50%);
-}*/
+.col.first  img:hover {
+  transform: translate(50%);
+}
+
 
 /* -- Row 2 --------- */
 
-/*.photo img {
-	transform-origin: 0 0;
+.photo img {
+	transform-origin: 50% 2px;
 }
 
 .photo:hover img {
 	transform: scale(1.2);
-}*/
+}
 
 /* -- Row 3 --------- */
 
