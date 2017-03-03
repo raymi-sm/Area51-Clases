@@ -105,17 +105,29 @@ p {
   margin: auto;
 }
 
+.photo-overlay {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(0,0,0, .5);
+}
+
 /* =================================
   Photo Overlay Transitions
 ==================================== */
 
-.photo-overlay {
+/*.col.first .photo-overlay {
 	opacity: 0;
 	transition: opacity .5s;
 }
-.photo-overlay:hover {
+.col.first .photo-overlay:hover {
 	opacity: 1;
-}
+}*/
 
 /* =================================
   Button Transitions
@@ -137,36 +149,37 @@ p {
 
 .col.first img {
   transition: transform .5s;
+  transform-origin: 40px 30px;
 }
 
 .col.first  img:hover {
-  transform: translate(50%);
+  transform: translateX(20%);
 }
 
 
 /* -- Row 2 --------- */
 
-.photo img {
+.col.second .photo img {
 	transform-origin: 50% 2px;
 }
 
-.photo:hover img {
+.col.second .photo:hover img {
 	transform: scale(1.2);
 }
 
 /* -- Row 3 --------- */
 
-/*.slide .photo-overlay, .slide img {
+.col.third .photo .photo-overlay, .slide img {
 	transition: transform .6s;
 }
 
-.slide .photo-overlay {
+.col.third .photo .photo-overlay {
 	transform: translateX(-100%);
 }
 
-.slide:hover .photo-overlay {
+.col.third .photo:hover .photo-overlay {
 	transform: translateX(0);
-}*/
+}
 
 /* -- Row 4 --------- */
 
