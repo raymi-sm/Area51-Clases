@@ -149,28 +149,33 @@ p {
 
 .col.first img {
   transition: transform .5s;
-  transform-origin: 40px 30px;
 }
 
 .col.first  img:hover {
-  transform: translateX(20%);
+  /*transform: translateX(20%);
+  transform: translateY(40%);
+  transform: translate(20%, 40%);*/
+  transform: rotate(180deg);
+  transform-origin: 20%;
+
 }
 
 
 /* -- Row 2 --------- */
 
 .col.second .photo img {
-	transform-origin: 50% 2px;
+  transform-origin: 50% 2px;
+  transition: transform 1s;
 }
 
 .col.second .photo:hover img {
-	transform: scale(1.2);
+	transform: scale(5.2);
 }
 
 /* -- Row 3 --------- */
 
-.col.third .photo .photo-overlay, .slide img {
-	transition: transform .6s;
+.col.third .photo .photo-overlay {
+	transition: transform 1s;
 }
 
 .col.third .photo .photo-overlay {
@@ -181,35 +186,12 @@ p {
 	transform: translateX(0);
 }
 
-/* -- Row 4 --------- */
-
-.content-3d {
-	perspective: 700px;
-}
-
-/*.content-3d .photo {
-	transform: rotateX(-5deg);
-}*/
-
-.content-3d .photo {
-	transition: transform 1s ease-out;
-	transform-style: preserve-3d;
-}
-
-.content-3d .photo:hover {
-	transform: rotateY(-180deg);
-}
-
-.content-3d .photo .side-a, .content-3d .photo .side-b {
-	backface-visibility: hidden;
-}
-
-.content-3d .photo .side-b {
-	transform: rotateY(180deg);
-}
-
 /* -- Logo ---------- */
 
-/*.logo:hover {
-	transform: rotate(-20deg);
-}*/
+.logo {
+  transition: transform .5s;
+}
+
+.logo:hover {
+	transform: rotate(180deg);
+}
