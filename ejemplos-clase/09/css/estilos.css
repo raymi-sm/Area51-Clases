@@ -110,6 +110,8 @@ div.formula {
 
 .imagen-flexible {
   margin-top: 60px;
+  background-color: red;
+  width: 50%;
 }
 
 .imagen-flexible img {
@@ -119,6 +121,7 @@ div.formula {
 
 .video-wrap {
   margin-top: 50px;
+
   position: relative;
   padding-bottom: 56.25%; /* equivale a 16:9 */
   height: 0;
@@ -146,39 +149,31 @@ div.formula {
   width: 500px;
   padding: 20px;
   color: white;
+  background-color: red;
 }
 
-.caja1 {
-  background: red;
-}
-
-.caja2 {
-  background: red;
-}
 
 @media (max-width: 1024px) {
   .caja {
     display: block;
     width: 100%;
     margin: 30px;
-  }
-
-  .caja1 {
     background: purple;
   }
 
-  .caja2 {
-    background: purple;
-  }
 }
 
 @media (max-width: 800px) {
 
-  .caja1 {
-    background: green;
-  }
-
-  .caja2 {
+  .caja {
     background: green;
   }
 }
+
+@media (max-width: 480px) {
+
+  .caja {
+    background: yellow;
+  }
+}
+
