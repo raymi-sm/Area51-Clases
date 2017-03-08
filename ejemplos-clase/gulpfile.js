@@ -6,14 +6,14 @@
 gulp.task('serve', function() {
 
     browserSync.init({
-        server: "09",
+        server: "10",
         port: 1504
     });
 
     //gulp.watch("05/*.scss", ['sass']).on('change', browserSync.reload);
-    gulp.watch("09/css/*.css").on('change', browserSync.reload);
-    gulp.watch("09/*.html").on('change', browserSync.reload);
-    gulp.watch("09/*.js").on('change', browserSync.reload);
+    gulp.watch("10/css/*.css").on('change', browserSync.reload);
+    gulp.watch("10/*.html").on('change', browserSync.reload);
+    gulp.watch("10/*.js").on('change', browserSync.reload);
 });
 
 /*gulp.task("sass", function(){
