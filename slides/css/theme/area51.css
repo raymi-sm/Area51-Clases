@@ -349,6 +349,13 @@ body {
   color: #9bd005;
   font-weight: bolder; }
 
-.reveal .multimedia-flexible .imagen-flexible, .reveal .multimedia-flexible .video-wrap {
-  width: 500px;
+
+.reveal .wrap__propiedades pre {
+  font-size: 2.5em;
+  width: 100%;
+  padding: 15px;
+}
+
+.reveal .wrap__propiedades.wrap__animation pre, .reveal .wrap__propiedades.wrap__3D pre  {
+  font-size: 1em;
 }
