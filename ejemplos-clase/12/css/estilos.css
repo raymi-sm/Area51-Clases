@@ -92,7 +92,7 @@ ul, ol {
   }
 
   .social--uno .social__list:first-child .social__link {
-    background-position: -0px 300px;
+    background-position: 0px 300px;
   }
 
     .social--uno .social__list:first-child .social__link:hover {
