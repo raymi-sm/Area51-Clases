@@ -38,6 +38,15 @@ h1 {
     background-color: #efefef;
 }
 
+.ejemplo-1 .floats-listas-ejemplo {
+  clear: both;
+}
+
+.ejemplo-1 .floats-listas-ejemplo li {
+  float: left;
+  list-style: none;
+}
+
 .clear {
   clear: both;
 }
