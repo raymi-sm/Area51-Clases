@@ -13,8 +13,9 @@ h1 {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 30px auto;
+  width: 90%;
 }
 
 .ejemplos {
@@ -31,10 +32,10 @@ h1 {
 }
 
 .ejemplo-1 p {
-    width: 230px;
+    width: 23%; /* antes 230px */
     float: left;
-    margin: 5px;
-    padding: 5px;
+    margin: 5px 1% 5px 1%;
+    padding: 5px 1% 5px 1%;
     background-color: #efefef;
 }
 
@@ -123,3 +124,26 @@ header li {
   position: absolute;
   bottom: 40px;
 }
+
+.floats-titulo {
+  position: relative;
+}
+
+.floats-titulo::before, .floats-titulo::after{
+  content: " ";
+  display: block;
+  width: 20%;
+  height: 10px;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 10px;
+}
+
+.floats-titulo::before {
+  left: 0;
+}
+
+.floats-titulo::after {
+  right: 0;
+}
+
