@@ -121,16 +121,13 @@ div.formula {
 
 .video-wrap {
   margin-top: 50px;
-
   position: relative;
   padding-bottom: 56.25%; /* equivale a 16:9 */
   height: 0;
-  overflow: hidden;
 }
 
 .video-wrap video {
   max-width: 100%;
-  height: auto;
 }
 
 .video-wrap iframe, .video-wrap object, .video-wrap embed {
@@ -177,3 +174,11 @@ div.formula {
   }
 }
 
+
+
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
