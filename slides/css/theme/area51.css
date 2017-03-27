@@ -359,3 +359,25 @@ body {
 .reveal .wrap__propiedades.wrap__animation pre, .reveal .wrap__propiedades.wrap__3D pre  {
   font-size: 1em;
 }
+
+.reveal .chrome-inspector .item {
+  width: 48%;
+}
+
+.reveal .chrome-inspector .item p, .reveal .chrome-inspector .item ul {
+  font-size: 0.7em;
+}
+
+.reveal .chrome-inspector .item video {
+  margin-top: 40px;
+}
+
+.reveal .js-highlight {
+  background: #1e83ad;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.reveal .variables .wrap__content {
+  margin-top: 0;
+}
