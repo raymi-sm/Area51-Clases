@@ -116,6 +116,10 @@ body {
   display: block;
   margin-left: 40px; }
 
+.reveal li {
+  list-style: none;
+}
+
 .reveal dt {
   font-weight: bold; }
 
@@ -304,12 +308,24 @@ body {
     background: #d14c42; }
 
   .reveal .wrap__content {
-    margin-top: 120px; }
+    margin-top: 120px;
+    text-align: center;
+  }
 
   .reveal .wrap__code pre {
     font-size: 1em;
     width: 100%;
     text-align: center; }
+
+  .reveal .wrap__capas span {
+    display: block;
+    text-align: center;
+  }
+
+  .reveal .wrap__capas .item {
+    padding: 20px 1.2em;
+    border-radius: .5em;
+  }
 
   .reveal .item {
     display: inline-block;
