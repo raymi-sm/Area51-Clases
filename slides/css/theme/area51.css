@@ -317,6 +317,10 @@ body {
     width: 100%;
     text-align: center; }
 
+  .reveal .wrap__code strong {
+    color: #9bd005;
+  }
+
   .reveal .wrap__capas span {
     display: block;
     text-align: center;
@@ -330,3 +334,15 @@ body {
   .reveal .item {
     display: inline-block;
     vertical-align: top; }
+
+  .reveal .estructura {
+    width: 49%;
+  }
+
+  .reveal .estructura-descripcion {
+    font-size: 0.8em;
+  }
+
+.reveal .estructura.wrap__code pre {
+  font-size: 2.3em;
+}
