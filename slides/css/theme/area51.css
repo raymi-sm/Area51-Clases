@@ -346,3 +346,11 @@ body {
 .reveal .estructura.wrap__code pre {
   font-size: 2.3em;
 }
+
+.reveal .etiquetas li {
+  font-size: 0.7em;
+}
+
+.reveal .etiquetas img {
+  width: 40%;
+}
