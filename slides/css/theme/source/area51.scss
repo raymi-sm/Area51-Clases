@@ -38,11 +38,16 @@ section.has-dark-background {
 	pre {
 		text-align: center;
 	}
+	.block {
+		&--magenta {
+			background-color: #e80b63;
+		}
+	}
 	.wrap {
-		&--green {
+		&--green, .block--green {
 			background: $green;
 		}
-		&--blue {
+		&--blue, .block--blue {
 			background: $blue;
 		}
 		&--red {
@@ -76,6 +81,48 @@ section.has-dark-background {
 		}
 		&__iframe {
 			width: 100%;
+		}
+		&__description {
+			width: 550px;
+			text-align: left;
+			span, code {
+				color: $green;
+				font-weight: bolder;
+			}
+			img.item {
+				vertical-align: middle;
+			}
+		}
+		&__css-externo {
+			width: 550px;
+			position: relative;
+			span {
+				position: absolute;
+				display: block;
+				top:0;
+				padding: 3px 14px;
+				right: 10px;
+			}
+		}
+		&__css-interno {
+			margin-top: 100px;
+			position: relative;
+			span {
+				position: absolute;
+				top: -10px;
+				right: 250px;
+				display: block;
+				padding: 3px 14px;
+			}
+		}
+		&__cajas {
+			h3 {
+				text-align: center;
+			}
+			ul {
+				margin-top: 40px;
+				width: 250px;
+			}
 		}
 	}
 	.item {
