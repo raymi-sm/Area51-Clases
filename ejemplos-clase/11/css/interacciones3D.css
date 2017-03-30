@@ -13,11 +13,11 @@
 
 .photo-desc {
 	color: #fff;
-	/*position: absolute;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;*/
+	left: 0;
 	background: #345d88;
 	line-height: 0;
 	padding: 50px 20px 0 20px;
@@ -31,23 +31,23 @@
 	perspective: 700px; /* habilita espacio 3D */
 }
 
-/*.content-3d .photo {
+.content-3d .photo {
 	transform: rotateX(-5deg);
-}*/
+}
 
-/*.content .photo {
+.content .photo {
 	transition: transform 1s ease-out;
-	transform-style: preserve-3d;*/ /* habilita espacio 3D para los hijos no directos
-}*/
+	transform-style: preserve-3d; /* habilita espacio 3D para los hijos no directos */
+}
 
-/*.content .photo:hover {
+.content .photo:hover {
 	transform: rotateY(-180deg);
-}*/
+}
 
-/*.content .photo .side-a, .content .photo .side-b {
-	backface-visibility: hidden; /* Esconder la parte trasera del elemento al ser rotado
-}*/
+.content .photo .side-a, .content .photo .side-b {
+	backface-visibility: hidden; /* Esconder la parte trasera del elemento al ser rotado */
+}
 
-/*.content .photo .side-b {
+.content .photo .side-b {
 	transform: rotateY(180deg);
-}*/
+}

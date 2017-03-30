@@ -10,6 +10,12 @@
 }
 body {
 	-webkit-animation: bg-move 8s ease-out forwards;
+	/* 
+		animation-name : bg-move;
+		animation-duration :8s;
+		animation-timing-function : ease-out;
+		animation-fill-mode: forwards;
+	*/
 }
 
 
