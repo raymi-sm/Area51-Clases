@@ -1,24 +1,48 @@
-// Programa para calcular el número de segundos en un día
+/* Objetos
 
-/*var segPorMin = 60;
-var minPorHora = 60;
-var horaPorDia = 24;
-var semanasPorAnio = 52;
+	Propiedades: Caracteristicas del objeto.
+	Metodos: Acciones que realiza el objeto.
 
-var segundosPorDía =  segPorMin * minPorHora * horaPorDia;*/
+*/
+
+// Seleccionando un campo de texto desde JavaScript
+
+document.getElementById("campo-texto");
+
+document.getElementById("campo-texto").value;
+
+// Seleccionando el mismo campo pero guardandolo en una variable
+
+// Creando un nuevo div con texto y colocandolo en el HTML desde JavaScript
+
+/*var newDiv = document.createElement("div"); 
+
+var newContent = document.createTextNode("Hi there and greetings!");
+
+newDiv.appendChild(newContent);
+document.body.prepend(newDiv);*/
 
 
-// Solucion de ejercicio
 
-var preguntas = 3;
-var preguntaSaldo = ' [quedan ' + preguntas + ' preguntas]';
-var adjetivo = prompt('Escribe aquí un adjetivo' + preguntaSaldo);
-preguntas -= 1;
-var preguntaSaldo = ' [quedan ' + preguntas + ' preguntas]';
-var sustantivo = prompt('Escribe aquí un sustantivo' + preguntaSaldo);
-preguntas -= 1;
-var preguntaSaldo = ' [quedan ' + preguntas + ' preguntas]';
-var verbo = prompt('Escribe aquí un verbo' + preguntaSaldo);
-alert('Todo listo!');
-var oracion = '<h1>Había una vez un programador que ' + adjetivo + ' quería aprender a Ruby y ' + sustantivo + ' para ' + verbo + '</h1>';
-document.write(oracion);
+
+
+
+
+
+var submitBtn = document.getElementById("submit-btn");
+
+submitBtn.addEventListener("click", function(){
+	/*var campoText = document.getElementById("campo-texto").value;
+	var campoValue = campoText;
+	console.log(campoValue);*/
+	console.log("me estan clickeando");
+});
+
+submitBtn.addEventListener("click", function(){ alert("Mensaje"); })
+
+
+var node = document.getElementById("container");
+var a = document.createAttribute("my_attrib");
+a.value = "newVal";
+node.setAttributeNode(a);
+console.log(node.getAttribute("my_attrib"));
