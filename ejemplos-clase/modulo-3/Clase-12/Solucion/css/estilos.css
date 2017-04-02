@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ededed;
+}
+
+.container {
+  background: #fff;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h1 {
+  margin: 1em;
+  padding: 25px 1.5em;
+  color: #000;
+  background: #fff;
+}
