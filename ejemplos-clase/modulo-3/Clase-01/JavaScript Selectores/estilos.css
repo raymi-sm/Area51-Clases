@@ -1,0 +1,26 @@
+.wrapper {
+	width: 970px;
+	margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+.cajas {
+	width: 970px;
+	height: 200px;
+	border-radius: 5px;
+	background-color:rgba(128, 128, 128, 0.09);
+	padding: 40px;
+	margin: 10px;
+}
+.azul {
+	color: blue;
+	font-size:30px;
+	font-weight: 40px;
+}
+
+.hide {
+  opacity: 0;
+}

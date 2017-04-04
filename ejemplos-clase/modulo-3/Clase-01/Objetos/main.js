@@ -1,13 +1,17 @@
 var persona = {
-	nombre:"juan carlos",
+	nombre:"Raymi",
 	edad:22,
 	correo:"jtorriccelli",
 	telefono:"11111111",
-	dni:"17869458"};
+	dni:"17869458",
+	saludo: function(){
+		document.write('Hola!');
+	}
+};
 
 var encuesta = {
 	fecha:"10/10/2014",
-	nombre:"Juan Carlos",
+	nombre:"Raymi",
 	correo:"jtorriccelli",
 	telefono:"11111111",
 	dni:"17869458",
@@ -15,12 +19,7 @@ var encuesta = {
 	distrito:"lince"
 };
 
-console.log(persona["nombre"]);
-console.log(persona["edad"]);
-console.log(persona["telefono"]);
+console.log(persona.nombre);
+console.log(persona.telefono);
 console.log(persona.edad);
-
-
-persona.nombre="nuevo nombre";
-
-persona.estadoCivil="soltero";
+console.log(persona.saludo());
