@@ -75,7 +75,8 @@ console.log(fechaActual.getDay());
 console.log("el dia actual es : "+dias[fechaActual.getDay()-1]);
 
 */
-var fechaPartes = [20, 12, 2014]; 
+
+/*var fechaPartes = [20, 12, 2014]; 
 console.log("Inicial", fechaPartes);
 
 console.log("arreglo unido por / ", fechaPartes.join("-") );
@@ -99,7 +100,7 @@ var punto=carecteres.indexOf(".");
 console.log("existe un arroba?")
 console.log(arroba);
 console.log("existe un punto?")
-console.log(punto);
+console.log(punto);*/
 
 
 

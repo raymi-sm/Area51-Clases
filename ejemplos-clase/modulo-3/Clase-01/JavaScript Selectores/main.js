@@ -21,6 +21,7 @@ Objeto: document
 
 */
 
+var mensaje = "Hola soy texto dinamico"
 var element = document.createElement('p');
 element.innerHTML = mensaje;
 var contenidoPrincipal = document.getElementById('contenidoPrincipal');
