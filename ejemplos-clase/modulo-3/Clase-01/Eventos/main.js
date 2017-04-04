@@ -2,9 +2,16 @@
 
 // Evento Click
 
-var link = document.querySelector(".link");
+var agregarItem = document.getElementById('add');
 
-link.addEventListener("keydown", function(event){
-	console.log(event);
+agregarItem.addEventListener('click', function(event){
+	event.preventDefault();
+	var campoTexto = document.getElementById('post-field');
+	var campoTextoValue = campoTexto.value;
 
+	var lista = document.createElement('li');
+	lista.innerHTML = campoTextoValue;
+
+	var listaWrap = document.getElementById('to-do');
+	listaWrap.append(lista);
 });
