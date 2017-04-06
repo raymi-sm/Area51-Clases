@@ -2,18 +2,7 @@ $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 	  loop:true,
     margin:10,
+    items: 1,
     nav:true,
-    items: 1
-    /*responsive:{
-        0:{
-            items:1
-        },
-        500:{
-            items:2
-        },
-        970:{
-            items:5
-        }
-    }*/
 	  }); 
 });
