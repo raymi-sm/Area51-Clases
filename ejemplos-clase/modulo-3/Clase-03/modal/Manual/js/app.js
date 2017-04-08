@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
   $('.cta').click(function(){
     $('.overlay').addClass('is-open');
     return false;
