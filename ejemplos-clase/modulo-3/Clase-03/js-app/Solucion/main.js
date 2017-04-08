@@ -1,4 +1,4 @@
-/*(function(){
+(function(){
 	var addValue = document.getElementById('add');
 
 	addValue.addEventListener('click', function(event){
@@ -25,8 +25,8 @@
 		}
 
 	});
-})();*/
-
+})();
+/*
 var agregarItem = document.getElementById('add');
 
 agregarItem.addEventListener('click', function(event){
@@ -39,4 +39,4 @@ agregarItem.addEventListener('click', function(event){
 
 	var listaWrap = document.getElementById('to-do');
 	listaWrap.append(lista);
-});
+});*/

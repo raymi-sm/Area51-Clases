@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>jQuery Plugins: Animated Modal</title>
+</head>
+<body>
+    <a id="demo01" href="#animatedModal">DEMO01</a>
+
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal"
+         -->
+        <div class="close-animatedModal"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+          <div class="paneles panel-1">
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officia, quaerat atque deserunt nam dolore ut sunt reprehenderit accusantium numquam consequuntur eaque repellendus necessitatibus ad ipsum incidunt nihil fugiat tenetur.</p>
+            <a href="#">Link</a>
+          </div>
+          <div class="paneles panel-2">
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officia, quaerat atque deserunt nam dolore ut sunt reprehenderit accusantium numquam consequuntur eaque repellendus necessitatibus ad ipsum incidunt nihil fugiat tenetur.</p>
+            <a href="#">Link</a>
+          </div>
+        </div>
+    </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/animatedModal.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
