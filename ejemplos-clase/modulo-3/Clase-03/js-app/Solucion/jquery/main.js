@@ -13,9 +13,13 @@ $(document).ready(function(){
     }
 
     var listaItems = $(".item");
+    console.log(listaItems);
     var titulo = $(".titulo-dinamico");
-    for(var i = 0; i < listaItems.length; i++){
-      console.log(listaItems[i]);
-    }
+    listaItems.each(function(){
+      $(this).on("click", function(){
+        itemsValue = listaItems.html();
+        titulo.html(itemsValue);
+      })
+    })
   });
 });
