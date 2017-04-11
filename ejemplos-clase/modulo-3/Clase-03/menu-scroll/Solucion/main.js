@@ -8,7 +8,7 @@
 
   1. Obtener por jQuery el menú y los enlaces
   2. Obtener el alto del menú
-  3. Cuando uno de los enlaces sea clickeado  
+  3. Cuando uno de los enlaces sea clickeado  la ventana se animará con una propiedad de scrolling desde jQuery, la cual será equivalente al valor en pixeles donde se encuentra la sección que pertenece al link
 
 */
 
