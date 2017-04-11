@@ -1,23 +1,25 @@
-/* 
-  Flujo del ejercicio:
+  var sections = $('section'), // [sections]
+    nav = $('nav'), 
+    nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight();
     
-    Cuando el usuario hace scroll, el menú activa aquel link que corresponde a la sección correspondiente al link.
-    Cuando el usuario clickea en uno de los links, la ventana scrollea por si misma hasta la ubicación que corresponde a la sección del link
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+      
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
 
-  Lista de Pasos:
-
-  1. Obtener por jQuery el menú y los enlaces
-  2. Obtener el alto del menú
-  3. Cuando uno de los enlaces sea clickeado  
-
-*/
-
-
-
-var nav = $('nav');
-var nav_height = nav.outerHeight();
-
-nav.find('a').on('click', function (e) {
+nav.find('a').on('click', function () {
   var $el = $(this), 
       id = $el.attr('href');
   
