@@ -21,10 +21,5 @@ $(document).ready(function(){
          titulo.html(itemHTML);
         })
     })
-    /*for(var i=0; i<listaItems.length; i++){
-     listaItems[i].click(function(){
-       alert("hello");
-     })
-    }*/
   });
 });
