@@ -1,0 +1,23 @@
+/* RGB */
+
+div {
+  background: rgb(244, 567, 70);
+} 
+
+/* Hexadecimal */
+
+h1 {
+  background: #fba154;
+}
+
+/* Nombre */
+
+p {
+  background: skyblue;
+}
+
+/* Color */
+
+body {
+  color: purple;
+}
