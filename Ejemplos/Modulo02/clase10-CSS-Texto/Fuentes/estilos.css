@@ -1,0 +1,14 @@
+/* 
+  Propiedades que afectan directamente a las fuentes
+
+*/
+
+section h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+section p {
+  font-style: oblique;
+  font-size: 150%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduccion a CSS</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<h1>Expandiendo Filas en Celdas</h1>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>10pm</th>
+        <th>4pm</th>
+        <th>2am</th>
+        <th>5pm</th>
+        <th>8am</th>
+      </tr>
+      <tr>
+        <th>Lunes</th>
+        <td colspan="3">Historia Universal</td>
+        <td>Geografia</td>
+        <td>Matematicas</td>
+      </tr>
+    </table>
+
+    <h1>Expandiendo Filas en Columnas</h1>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>10pm</th>
+        <th>4pm</th>
+        <th>2am</th>
+        <th>5pm</th>
+        <th>8am</th>
+      </tr>
+      <tr>
+        <th>Lunes</th>
+        <td rowspan="2">Historia</td>
+        <td>Ciencias</td>
+        <td>Politica</td>
+        <td>Medicina</td>
+        <td>Astrologia</td>
+      </tr>
+
+      <tr>
+        <th>Martes</th>
+        <td rowspan="2">Geografia</td>
+        <td>Cine</td>
+        <td>Cocina</td>
+        <td>Astrofisica</td>
+      </tr>
+
+      <tr>
+        <th>Miercoles</th>
+        <td rowspan="3">Lenguaje</td>
+        <td>Literatura</td>
+        <td>Semiotica</td>
+        <td>Criminologia</td>
+      </tr>
+      <tr>
+        <th>Jueves</th>
+        <td rowspan="3">Fisica</td>
+        <td>Quimica</td>
+        <td>Civica</td>
+        <td>T.I</td>
+      </tr>
+    </table>
+</html>
