@@ -1,7 +1,10 @@
-/* 
-  Propiedades que afectan directamente a las fuentes
-
-*/
+@font-face {
+  font-family: 'Bebas';
+  src: url('fonts/bebas-1.ttf') format('true.bloque-fuentes')
+       url('fonts/bebas.eot') format('embedded-opentype'),
+       url('fonts/bebas.woff') format('woff'),
+       url('fonts/bebas.svg') format('svg')
+}
 
 section h2 {
   font-family: Arial, sans-serif;
@@ -9,6 +12,7 @@ section h2 {
 }
 
 section p {
+  font-family: 'Bebas', sans-serif;
   font-style: oblique;
   font-size: 150%;
 }

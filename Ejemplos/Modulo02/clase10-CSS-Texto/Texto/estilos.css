@@ -1,0 +1,67 @@
+/* Fuentes */
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('fonts/bebas-1.ttf'),
+       url('fonts/bebas-1.eot')
+}
+
+.bloque-fuentes h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.bloque-fuentes p {
+  font-family: 'Bebas', sans-serif;
+  font-style: oblique;
+  font-size: 150%;
+}
+
+/* Texto */
+
+.bloque-texto {
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+.bloque-texto {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+}
+
+#texto h2 {
+  text-align: center;
+  text-align: left;
+  text-align: right;
+  text-align: justify;
+
+  text-indent: 50px;
+}
+
+#texto p {
+  line-height: 1.5em;
+  line-height: 24px;
+  line-height: 200%;
+
+  letter-spacing: 8px;
+  word-spacing: 25px;
+}
+
+#image {
+  vertical-align: sub;
+  vertical-align: super;
+  vertical-align: top;
+  vertical-align: text-top;
+  vertical-align: middle;
+  vertical-align: bottom;
+  vertical-align: text-bottom;
+}
+
+#link1 {
+  text-indent: 50px;
+}
+
+

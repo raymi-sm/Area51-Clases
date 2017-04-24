@@ -1,0 +1,28 @@
+/* Propiedades CSS3 */
+
+p {
+  font-size: 1.8em; 
+}
+
+#first:first-letter {
+  color: green;
+  font-size: 3em;
+}
+
+p::first-line {
+  color: red;
+}
+
+a {
+  font-size: 2.5em;
+}
+
+a:hover {
+  color: black;
+}
+
+input:focus {
+  background: green;
+}
+
+
