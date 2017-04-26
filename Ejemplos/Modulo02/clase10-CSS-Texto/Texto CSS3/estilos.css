@@ -21,6 +21,10 @@ a:hover {
   color: black;
 }
 
+a:active {
+  color: blue;
+}
+
 input:focus {
   background: green;
 }
