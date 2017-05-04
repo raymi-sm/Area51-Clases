@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cajas Parte 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Validando Formularios</h1>
+    </div>
+  </header>
+  <main>
+    <section class="formularios container">
+			<form>
+			  <fieldset>
+					<legend>Login</legend>
+					<div class="input-wrap">
+						<i class="fa fa-users"></i>	
+						<label for="Nombre">Usuario</label>
+						<input type="text" name="nombre" required placeholder="Escribe aquí tu usuario" pattern="[a-z]{2,15}" title="Tu nombre de usuario tiene que ser mínimo de 2 caracteres y todo en minúscula" class="form-required" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-envelope-o"></i>
+						<label for="Email">Email</label>
+						<input type="email" name="email" required placeholder="ejemplo@correo.com" class="form-required" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-lock"></i>
+						<label for="Asunto">Contraseña</label>
+						<input type="password" placeholder="Escribe tu contraseña" required class="form-required" />
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Datos</legend>
+					<div class="input-wrap">
+						<i class="fa fa-users"></i>	
+						<label for="Nombre">Nombres y Apellidos</label>
+						<input type="text" name="nombre" placeholder="Escribe tu nombre y apellido" required class="form-required" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-phone"></i>
+						<label for="Email">Teléfono</label>
+						<input type="number" name="telefono" placeholder="Escribe tu telefono" />
+					</div>
+
+					<div class="input-wrap">
+						<i class="fa fa-calendar"></i>
+						<label for="Asunto">Cumpleaños</label>
+						<input type="date" name="birthdays" />
+					</div>
+
+				</fieldset>
+					<input type="submit" name="submit" value="Enviar" class="button blue medium contact-btn">
+			</form>
+		</section>
+  </main>
+</body>
+</html>
