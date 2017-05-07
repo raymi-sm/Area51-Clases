@@ -66,6 +66,7 @@ section h2 {
   transform: translate(3em); 
 }
 
+
 .block-list {
   transition: transform 1s;
 }
