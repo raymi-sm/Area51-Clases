@@ -9,8 +9,6 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  /*background: url('docs/ejercicio.png') top center;
-  opacity: 0.5;*/
 }
 
 a {
@@ -34,9 +32,9 @@ header {
 }
 
 header h1 {
-  width: 150px; /* 150 / 1200 * 100 */
+  width: 12.5%; /* 150 / 1200 * 100 */
   float: left;
-  margin-left: 24px; /* 24 / 1200 * 100 */
+  margin-left: 2%; /* 24 / 1200 * 100 */
 }
 
 header nav {
@@ -61,11 +59,57 @@ header a {
   color: #333;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 20px; 
-  margin-right: 46px;
+  font-size: 0.8em; 
+  margin-right: 2.875em;
   transition: color 500ms;
 }
 
 header a:active, header a:hover, header .active {
   color: #03a9f4;
+}
+
+/* Services */
+
+.services-wrap {
+  margin-top: 40px;
+  background: #f7f7f7;
+}
+
+.services {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 1em;
+  margin: 20px 3% 15px 0;
+  text-align: center;
+  border:1px solid #ededed;
+  background: white;
+  transition: transform 2s;
+}
+
+.services:nth-child(3), .services:nth-child(6) {
+  margin-right: 0;
+}
+
+.services:hover {
+  transform: translateY(-10px);
+}
+
+.services span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 2em;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: 1px solid #ededed;
+  line-height: 80px;
+  margin: 0 auto;
+  transition: transform 1s, background 500ms, color 500ms;
+}
+
+.services:hover span {
+  transform: translateY(-10px);
+  background: #03a9f4;
+  color: white;
 }
