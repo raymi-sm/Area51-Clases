@@ -1,0 +1,150 @@
+/* Formula: target / context * 100 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  /*background: url('docs/ejercicio.png') top center;
+  opacity: 0.5;*/
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  padding: 19px 0 4px 0;
+  box-shadow: 1px 1px 4px 0px #ccc;
+}
+
+header h1 {
+  width: 12.5%; /* 150 / 1200 * 100 */
+  float: left;
+  margin-left: 1.5em; /* 24px */
+}
+
+header nav {
+  float: right;
+  margin-top: 14px;
+}
+
+header img {
+  max-width: 100%;
+}
+
+header li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header li:last-child a{
+  margin-right: 0;
+}
+
+header a {
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em; /* 13px */ 
+  margin-right: 2.875em; /* 46px */
+  transition: color 500ms;
+}
+
+header a:active, header a:hover, header .active {
+  color: #03a9f4;
+}
+
+/* Degradados */
+
+.degradados-ejemplos div {
+  margin: 50px auto 0 auto;
+  width: 80%;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.degradados-ejemplos h1 {
+  line-height: 200px;
+  text-align: center;
+  color: white;
+}
+
+.degradado-lineal {
+  background: #466368;
+  background: linear-gradient(#648880, #293f50);
+}
+
+.degradado-lineal-direccion {
+  background: #466368;
+  background: linear-gradient(to right bottom, #648880, #293f50);
+}
+
+.degradado-radial {
+  background: #466368;
+  background: radial-gradient(#648880, #293f50);
+}
+
+.degradado-color-stop {
+  background: #466368;
+  background: linear-gradient( #f6f1d3, #648880, #293f50);
+}
+
+.degradado-color-stop-positions {
+  background: #466368;
+  background: linear-gradient( #f6f1d3 0%, #648880 80%, #293f50 100%);
+}
+/* Galeria */
+
+.galeria-fotos {
+  margin-top: 40px;
+}
+
+.fotos-wrap {
+  float: left;
+  width: 33.333%;
+  margin-top: -3px;
+  position:relative;
+  overflow: hidden;
+}
+
+.fotos-wrap img {
+  max-width: 100%;
+}
+
+.fotos-description {
+  background:#03a9f4;
+  background: linear-gradient(to bottom, transparent 0%, rgba(3, 169, 244, 0.9) 75%);
+  /*background:rgba(0,0,0,0.5);*/
+  position: absolute;
+  bottom: -285px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: bottom 500ms;
+}
+
+.fotos-wrap:hover .fotos-description {
+  bottom: 0px;
+} 
+

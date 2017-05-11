@@ -1,0 +1,61 @@
+/* Formula: target / context * 100 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  /*background: url('docs/ejercicio.png') top center;
+  opacity: 0.5;*/
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: red;
+  position: relative;
+}
+
+.pelota {
+  margin-top: 150px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background: rebeccapurple;
+  animation-name: pelota;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes pelota {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+    background: pink;
+  }
+}
+
