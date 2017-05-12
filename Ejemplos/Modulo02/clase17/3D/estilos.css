@@ -1,0 +1,79 @@
+/* Formula: target / context * 100 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  /*background: url('docs/ejercicio.png') top center;
+  opacity: 0.5;*/
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tridi {
+  margin-top: 80px;
+}
+
+.gatito {
+  perspective: 100px;
+  background:rgba(0, 255, 255, 0.5);
+  margin-top: 50px;
+  margin-right: 2em;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.gatito img {
+  transition: all 2s ease-in-out;
+}
+
+/* Rotacion */
+
+.rotateX:hover img {
+  transform: rotateX(360deg);
+}
+
+.rotateY:hover img {
+  transform: rotateY(360deg);
+}
+
+.rotateZ:hover img {
+  transform: rotateZ(360deg);
+}
+
+/* Skew */
+
+.skewX:hover img {
+  transform: skewX(45deg);
+}
+
+.skewY:hover img {
+  transform: skewY(45deg);
+}
+
+
+

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #ededed;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  height: 900px;
+  width: 100%;
+  margin: 50px auto;
+  background: white;  
+  padding: 60px 1em;
+  border-radius: 10px;
+}
+
+.caja {
+  width: 400px;
+  height: 400px;
+}
+
+.caja img {
+  max-width: 100%;
+}
+
+/* Tecnicas */
+
+.text-align .container {
+  text-align: center;
+}
+
+.text-align .caja {
+  display: inline-block;
+  background: url("images/team-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.margin-auto .caja {
+  background: url("images/team-2.jpg") no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.absolute .container {
+  position: relative;
+}
+
+.absolute .caja {
+  background: url("images/team-3.jpg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -200px;
+  margin-top: -200px;
+}
+
+.translate .container {
+  position: relative;
+}
+
+.translate .caja {
+  background: url("images/team-4.jpg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
