@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio Strings</title>
+</head>
+<body>
+  <!-- 
+    El ejercicio costan de crear un string en minúsculas que luego debe de ser impreso cada palabra por separado y en mayúsculas.
+
+
+    Pasos para hacer el ejercicio:
+
+      1. Crear una oración o frase medianamente larga y guardarla en una variable
+      2. Convertir las letras de la oración o frase en mayúsculas y guardar esta nueva oración en otra variable 
+      3. Separar la frase por palabras y guardar el resultado en una variable
+      4. Imprimir la palabra que se encuentra en la tercera posición
+  -->
+  <script>
+    var oracion = 'Había una vez un elefante que se llamaba maíz. Luego vino un pollito y se lo comió'
+
+    var mayúsculas = oracion.toUpperCase();
+
+    console.log("Mi oración en mayúsculas: " + mayúsculas);
+
+    var separarFrase = mayúsculas.split(' ');
+
+    console.log(separarFrase);
+
+    document.write(separarFrase[3]);
+  </script>
+</body>
+</html>

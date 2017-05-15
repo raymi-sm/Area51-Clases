@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>JavaScript: Condicionales</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Generador de Números Aleatorio</h1>
+    <script type="text/javascript">
+      var num = parseInt(prompt('Escribe un número'));
+      if(isNaN(num)) {
+        var otroNumero = parseInt(prompt('No ingresaste un número. Intenta de nuevo'));
+        var random = Math.floor(Math.random() * otroNumero) + 1;
+        alert("¿Estás listo para ver tu número?");
+        document.write(random + ' es un número que se encuentra entre 0 y ' + otroNumero);
+      }else {
+        var random = Math.floor(Math.random() * num) + 1;
+        alert("¿Estás listo para ver tu número?");
+        document.write(random + ' es un número que se encuentra entre 0 y ' + num);
+      }
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>JavaScript: Variables</title>
+</head>
+<body>
+  <!-- 
+    El ejercicio consta de pedirle al usuario un número para luego generar un número aleatorio que vaya desde 0 hasta el número que el usuario nos dió
+
+    Pasos para realizar este ejercicio
+
+    1. Crea un prompt() para recibir el número del usuario
+    2. Guarda la información en una variable
+    3. Usa el objeto Math para crear el número aleatorio que vaya desde 0 hasta el número ingresado por el usuario
+    4. Imprime el número en la pantalla
+
+  -->
+  <div class="container">
+    <h1>Generador de Números Aleatorio</h1>
+    <script type="text/javascript">
+      var num = prompt('Escribe un número');
+      var random = Math.floor(Math.random() * num) + 1;
+      
+      alert("¿Estás listo para ver tu número?");
+
+      document.write(random + ' es un número que se encuentra entre 0 y ' + num);
+    </script>
+  </div>
+</body>
+</html>

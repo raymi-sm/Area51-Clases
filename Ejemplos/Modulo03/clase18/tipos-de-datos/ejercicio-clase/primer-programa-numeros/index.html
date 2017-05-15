@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>JavaScript: Variables</title>
+</head>
+<body>
+  <div class="container">
+    <h1>El Cuenta Cuentos</h1>
+    <script type="text/javascript">
+      var preguntas = 3;
+      var preguntasRestantes = ' [' + preguntas + ' preguntas restantes]';
+      var sustantivo = prompt('Escribe un sustantivo' + preguntasRestantes);
+      
+      preguntas = preguntas -1;
+      preguntasRestantes = ' [' + preguntas + ' preguntas restantes]';
+      var adjetivo = prompt('Escribe un adjetivo' + preguntasRestantes);
+
+      preguntas = preguntas -1;
+      preguntasRestantes = ' [' + preguntas + ' preguntas restantes]';
+      var verbo = prompt('Escribe un verbo' + preguntasRestantes);
+      
+      alert("¿Estás listo para tu historia?");
+      
+      var historia = '<p> Habia una vez un ' + sustantivo + ' ' + 'que era muy ' + adjetivo + ' ' + 'y le gustaba salir a ' + verbo + '</p>'
+      
+      document.write(historia);
+    </script>
+  </div>
+</body>
+</html>
