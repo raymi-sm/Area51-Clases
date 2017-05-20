@@ -19,7 +19,14 @@ vePorMiCafe();
 
 */ 
 
+function mensaje(mensaje) {
+  //document.write(mensaje);
+  //console.log(mensaje);
+  alert(mensaje);
+}
+
 //Ejemplo con Generador de Numeros Aleatorios
+
 /*
 function generarNumeroAleatorio() {
   var numeroAleatorio = Math.floor( Math.random() * 10 ) + 1;
@@ -41,9 +48,7 @@ Las funciones cambian este flujo. Cada vez que la función es ejecutada el naveg
 
 */
 
-/* 
-  Segunda forma de declarar una funcion
-*/
+//Segunda forma de declarar una funcion
 
 var generarNumeroAleatorio = function() {
   var numeroAleatorio = Math.floor( Math.random() * 10 ) + 1;
