@@ -20,8 +20,10 @@
  var respuestasCorrectas = 0;
 
  var respuesta1 = prompt('pregunta 1');
- var respuesta2 = prompt('pregunta 1');
- var respuesta3 = prompt('pregunta 1');
+ var respuesta2 = prompt('pregunta 2');
+ var respuesta3 = prompt('pregunta 3');
+ var respuesta4 = prompt('pregunta 4');
+ var respuesta5 = prompt('pregunta 5');
 
 if(respuesta1 === 'blah') {
   respuestasCorrectas = respuestasCorrectas + 1;
@@ -32,17 +34,20 @@ if(respuesta2 === 'bleh') {
 if(respuesta3 === 'blih') {
   respuestasCorrectas = respuestasCorrectas + 1;
 }
+if(respuesta4 === 'bloh') {
+  respuestasCorrectas = respuestasCorrectas + 1;
+}
+if(respuesta5 === 'bluh') {
+  respuestasCorrectas = respuestasCorrectas + 1;
+}
 
-if(respuestasCorrectas === 3){
+if(respuestasCorrectas === 5){
   document.write('Has ganado la corona de oro!');
-}else if(respuestasCorrectas === 2) {
+}else if(respuestasCorrectas === 3) {
   document.write('Has ganado la corona de plata');
-}else if(respuestasCorrectas === 1){
-  document.write('Has ganado la corona de bronce');
-}else {
-  document.write('No ganaste nada :(');
-} 
-
+}else if(respuestasCorrectas < 3){
+  document.write('Perdiste :(');
+}
 
 /* 
 
