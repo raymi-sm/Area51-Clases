@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ededed;
+}
+
+.container {
+  background: #fff;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0 20px 2em;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+.imagenes-wrap {
+  margin-top: 40px;
+}
+
+img {
+  width: 300px;
+  vertical-align: top;
+}
+
+.numeros {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: #ededed;
+  line-height: 100px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px 1em 30px 0;
+}

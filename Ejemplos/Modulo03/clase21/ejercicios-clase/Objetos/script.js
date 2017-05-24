@@ -1,5 +1,4 @@
 /*  
-
 var persona = {
   nombre : 'Juan Carlos',
   pais : 'Peru',
@@ -72,12 +71,11 @@ message += '<p>My age is now ' + person.age + '</p>';
 message += '<p>I have ' + person.skills.length + ' skills: ' ;
 message += person.skills.join(', ') + '</p>';
 print(message);
- */
+*/
 
 /* 
 Usando el ejercicio de la clase anterior
-  // Sin objetos
-
+// Sin objetos
 
 var respuestasCorrectas = 0;
 var pregunta, respuesta, usuarioRespuesta;
@@ -86,8 +84,8 @@ var preguntasYrespuestas = [
 	[ '¿Cuántos estados tienen los Estados Unidos?', 50 ],
 	[ '¿Cuántos continentes hay en el mundo', 7 ],
 	[ '¿Cuántas patas tiene una araña', 8 ],
-  ['¿De que color es el cielo', 'azul'],
-  ['¿Quien es la esposa del león?', 'Leona']
+  [ '¿Cuantos dedos tiene un ser humano?', 5],
+  [ '¿En que año Colón descubrió América?', 1492]
 ];
 
 for(var i = 0; i < preguntasYrespuestas.length; i++){
@@ -95,19 +93,18 @@ for(var i = 0; i < preguntasYrespuestas.length; i++){
 	respuesta = preguntasYrespuestas[i][1];
 	usuarioRespuesta = parseInt(prompt(pregunta));
 	if(usuarioRespuesta === respuesta){
-		//respuestasCorrectas++
-		//respuestasCorrectas = respuestasCorrectas + 1
-		respuestasCorrectas +=1;
+		respuestasCorrectas++
 	}
 }
 
 document.write('Tuviste ' + respuestasCorrectas + ' respuestas correctas');
 */ 
 
+/*
 // Con Objetos
 
 var respuestasCorrectas = 0;
-var pregunta, respuesta, usuarioRespuesta;
+var preguntaUsuario, respuestaUsuario, usuarioRespuesta;
 
 var preguntasYrespuestas = [
   { 
@@ -123,23 +120,21 @@ var preguntasYrespuestas = [
      respuesta: 8
    },
    {
-     pregunta: '¿De que color es el cielo',
-     respuesta: 'azul'
+     pregunta: '¿Cuantos dedos tiene un ser humano?',
+     respuesta: 5
    },
    {
-     pregunta: '¿Quien es la esposa del león?',
-     respuesta: 'Leona'
+     pregunta: '¿En que año Colón descubrió América?',
+     respuesta: 1492
    }
 ];
 
 for(var i = 0; i < preguntasYrespuestas.length; i++){
-	pregunta = preguntasYrespuestas[i].pregunta;
+	pregunta  = preguntasYrespuestas[i].pregunta;
 	respuesta = preguntasYrespuestas[i].respuesta;
 	usuarioRespuesta = parseInt(prompt(pregunta));
 	if(usuarioRespuesta === respuesta){
-		//respuestasCorrectas++
-		//respuestasCorrectas = respuestasCorrectas + 1
-		respuestasCorrectas +=1;
+		respuestasCorrectas++
 	}
 }
 
@@ -152,3 +147,5 @@ if(respuestasCorrectas === 5) {
 }
 
 document.write('Tuviste ' + respuestasCorrectas + ' respuestas correctas');
+*/
+
