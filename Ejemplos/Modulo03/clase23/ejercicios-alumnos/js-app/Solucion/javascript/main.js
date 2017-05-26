@@ -10,7 +10,7 @@
 			var lista = document.getElementById('to-do');
 			var item = document.createElement('li');
 			item.className ='item';
-			item.innerHTML = inputField;
+			item.innerHTML = '<p>' + inputField + '</p>' + '<div class="icons"><span class="fa fa-trash-o"></span>' + '<span class="fa fa-check"></span></div>' ;
 			lista.appendChild(item);
 			document.getElementById('post-field').value = "";
 		}else {
@@ -20,7 +20,7 @@
 		var listaItems = document.getElementsByClassName('item');
 		for(var i=0; i < listaItems.length; i++){
 			listaItems[i].addEventListener('click', function(){
-				titulo.innerHTML = this.innerHTML;
+				titulo.innerHTML = inputField;
 			});
 		}
 
