@@ -154,9 +154,6 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in-out; }
@@ -164,7 +161,10 @@ h1 {
     opacity: 1;
     pointer-events: auto; }
     .overlay.is-open .modal {
-      transform: translate(0px, 0px); }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .modal {
   transform: translate(0px, -100px);
