@@ -1,27 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">-->
-  <link rel="stylesheet" href="css/estilos.css">
-  <title>Animate: CSS</title>
-</head>
-<body>
-  <div class="animate-main">
-    <div class="container">
-      <h1>Usando <span>animate.css</span></h1>
-      <form>
-        <input type="text" name="text-field" />
-        <input type="submit" value="enviar" name="submit-btn" />
-      </form>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-</body>
+<!doctype>
+<html>
+	<head>
+		<!-- Place somewhere in the <head> of your document -->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<style>
+			.wrapper{
+				width: 600px;
+				margin:0 auto;
+			}
+			.title-slide{
+				background-color: rgba(0,0,0,0.5);
+				padding: 10px;
+				color: white;
+				font-size: 20px;
+				font-family: arial;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="flexslider">
+		  	<ul class="slides">
+		    	<li>
+		      	<img src="http://lorempixel.com/400/200/" />
+		      	<p class="title-slide">TITULO DE IMAGEN</p>
+		    	</li>
+		    	<li>
+		      	<img src="http://lorempixel.com/400/200/" />
+		    		<p class="title-slide">TITULO DE IMAGEN</p>
+		    	</li>
+		    	<li>
+		      	<img src="http://lorempixel.com/400/200/" />
+		    		<p class="title-slide">TITULO DE IMAGEN</p>
+		    	</li>
+		  	</ul>
+			</div>
+		</div>
+	</body>
 </html>
+
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$('.flexslider').flexslider({
+			direction: "horizontal",
+			animation: "slide",
+			controlNav: true,
+			directionNav: false
+		})
+	});
+</script>

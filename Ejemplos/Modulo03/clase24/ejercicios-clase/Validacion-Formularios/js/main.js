@@ -1,4 +1,36 @@
-$('#form').validate({ 
+$(document).ready(function(){
+  $('#form').validate({
+    rules: {
+      name: {
+        required: true
+      },
+      age: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: 'Por favor ingresa tu nombre'
+      },
+      email: {
+        required: 'Por favor ingresa tu correo electronico',
+        email: 'Por favor ingresa un correo electrónico válido'
+      }
+    }
+  })
+});
+
+
+
+
+
+
+
+/*$('#form').validate({ 
     rules: {
       age: {
         age_check: true
@@ -20,14 +52,14 @@ $('#form').validate({
 });
 
 
-$.validator.addMethod('age_check', function(value, element) {
+$.validator.addMethod('age_check', function(value) {
     if (value >= 18){
       return true;
     }
 });
 
-$.validator.addMethod('phone_check', function(value, element) {
+$.validator.addMethod('phone_check', function(value) {
     if (value.length === 9){
       return true;
     }
-});
+});*/
