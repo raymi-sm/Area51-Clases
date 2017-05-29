@@ -92,7 +92,13 @@ header a:active, header a:hover, header .active {
 
 .sticky nav {
   float: none;
-  display: inline-block;
+  width: 53%;
+  margin: 15px auto;
+}
+
+.sticky nav a {
+  text-align: center;
+  padding: 15px 1em;
 }
 
 .sticky a {
