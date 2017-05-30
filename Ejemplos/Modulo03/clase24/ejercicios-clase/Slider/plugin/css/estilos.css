@@ -1,0 +1,11 @@
+.wrapper{
+		width: 600px;
+		margin:0 auto;
+}
+.title-slide{
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	font-family: arial;
+}

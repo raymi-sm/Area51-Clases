@@ -11,22 +11,22 @@
 
 */
 
-
-
-var sections = $('section'), // [sections]
+$(document).ready(function(){
+  var sections = $('section'), // [sections]
     nav = $('nav'), 
     nav_height = nav.outerHeight();
 
-nav.find('a').on('click', function (e) {
-  e.preventDefault();
-  var $el = $(this), 
+  nav.find('a').on('click', function (e) {
+    e.preventDefault();
+    var $el = $(this), 
       id = $el.attr('href');
       
-  $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height
-  }, 500);
-});
+    $('html, body').animate({
+      scrollTop: $(id).offset().top - nav_height
+    }, 500);
+  });
 
+});
 
 
 
