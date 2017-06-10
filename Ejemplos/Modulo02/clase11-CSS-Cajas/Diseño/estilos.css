@@ -6,4 +6,114 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background: gray;
+}
+
+.caja-dimensiones {
+  background: rgba(102, 51, 153, 0.5);
+  color: white;
+  width: 200px;
+  height: 200px;
+  max-width: 400px;
+  max-height: 600px;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.caja-overflow {
+  background: rgba(49, 43, 229, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.caja-borde-1 {
+  background: rgba(255, 0, 117, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: #000;
+  border-top: 5px solid #000;
+  border: 5px solid #000;
+}
+
+.caja-borde-2 {
+  background: rgba(255, 0, 117, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  border: 5px dotted #000;
+}
+
+.caja-borde-3 {
+  background: rgba(255, 0, 117, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  border: 5px dashed #000;
+}
+
+.caja-borde-4 {
+  background: rgba(255, 0, 117, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  border: 5px ridge #000;
+}
+
+.caja-margin {
+  background: rgba(15, 196, 52, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.caja-padding {
+  background: rgba(15, 196, 52, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.caja-display {
+  background: rgba(0, 97, 255, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  display: block;
+  display: inline-block;
+  display: none;
+}
+
+.caja-visibilidad {
+  background: rgba(43, 20, 107, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  visibility: hidden;
+   visibility: visible;
+}
+
+.caja-boxshadow {
+  background: rgba(43, 20, 107, 0.5);
+  color: white;
+  width: 300px;
+  height: 200px;
+  box-shadow: 1px 1px 19px 3px #000;
+}
+
+.caja-border-radius {
+  background: rgba(43, 20, 107, 0.5);
+  color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
