@@ -1,0 +1,40 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #D6DBD8;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 145px;
+  background: #009688;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px 1em;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+  position:relative;
+  z-index: 1;
+  background: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p, h1 {
+  text-align: center;
+}

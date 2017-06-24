@@ -1,0 +1,38 @@
+/* 
+  Cuando un elemento es inline, las propiedades ancho, alto, margin-top, margin-bottom y float no tienen ningún efecto.
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, footer {
+  background: #000;
+}
+
+section, header, footer {
+  color: white;
+  font-weight: bolder;
+  font-size: 2em;
+  padding: 15px 1em;
+  text-align: center;
+}
+
+section {
+  background: rebeccapurple;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+
+  width: 30%;
+  display: inline-block;
+}

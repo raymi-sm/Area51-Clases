@@ -10,3 +10,15 @@ td {
 th {
 	background-color: purple;
 }
+
+.table-emptycells {
+	empty-cells: hide;
+}
+
+.table-borderspacing {
+	border-spacing: 5px 15px;
+}
+
+.table-bordercollapse {
+	border-collapse: collapse;
+}

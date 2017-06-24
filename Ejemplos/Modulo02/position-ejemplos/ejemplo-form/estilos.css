@@ -1,0 +1,56 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1C2227;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+p span {
+  color: #fab23a;
+}
+
+.subscribe {
+  position: relative;
+}
+
+.subscribe img {
+  position: absolute;
+  top: 17px;
+  right: 80px;
+  width: 13%;
+}
+
+form {
+  width: 60%;
+  margin: 25px auto;
+}
+
+input {
+  display: block;
+  padding: 15px 1em;
+  border:none;
+  font-size: 1em;
+}
+
+#email-field {
+  width: 60%;
+  float: left;
+}
+
+#subscribe-btn {
+  width: 30%;
+  background:#fab23a;
+  color: white;
+  text-transform: uppercase;
+}

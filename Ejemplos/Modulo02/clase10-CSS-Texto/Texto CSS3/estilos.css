@@ -1,7 +1,15 @@
 /* Propiedades CSS3 */
 
+/* 
+  text-shadow [horizontal] [vertical] [blur] [color] 
+  :first-line
+  :first-letter
+*/
+
+
 p {
-  font-size: 1.8em; 
+  font-size: 1.8em;
+  text-shadow: 1px 1px 30px #000; 
 }
 
 #first:first-letter {
@@ -28,5 +36,6 @@ a:active {
 input:focus {
   background: green;
 }
+
 
 

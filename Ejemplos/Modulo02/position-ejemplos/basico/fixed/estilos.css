@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenido {
+  font-size: 3em;
+}
+
+.contenido p {
+  background: green;
+  color: white;
+  margin-top: 40px;
+}
+
+nav {
+  display: block;
+  padding: 25px; 
+  background: purple;
+  text-decoration: none;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  margin-right: 30px;
+}

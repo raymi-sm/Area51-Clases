@@ -1,0 +1,36 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffeeda;
+}
+
+.post-wrap {
+  width: 100%;
+  max-width: 641px;
+  margin: 50px auto;
+  background: white;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.06);
+  box-shadow: 1px 1px 15px 6px rgba(0,0,0,0.1);
+}
+
+.post {
+  margin-top:-3px;
+  padding: 35px 1.2em 15px 1.2em;
+  border: 1px solid; 
+  margin: 10px 15px;
+  position:relative; 
+}
+
+.post img {
+   border: 5px solid white;
+   border-radius: 100%;
+   position: absolute;
+   top: -36px;
+   left: 255px;
+   width: 10%;
+}

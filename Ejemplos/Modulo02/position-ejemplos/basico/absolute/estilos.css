@@ -1,0 +1,54 @@
+/* 
+  Todo elemento tiene una posicion inicial. La llamaremos static. Entonces position: static significa “posicion inicial”. En donde un elemento se dibuja por defecto. 
+  Podemos variar la posicion de un elemento usando otros valores para position, acompañado de coordenadas para la posicion final del elemento.
+
+  Si queremos que las coordenadas sean en base a la posicion inicial, usaremos position: relative. Entonces, quiero que el elemento se mueva con respecto a si mismo, 10px a la derecha y 30px hacia abajo, ademas de declarar position: relative añadiremos los valores… top: 30px (se movera 30 px desde su borde superior) y left: 10px (se movera 10px desde su borde izquierdo). Los objetos se moveran la cantidad de unidades que indiques desde el lado que indiques
+
+  Si en cambio quieres mover al objeto con respecto al elemento que lo contiene, declaras position: absolute. Pero esto funciona con un truco… porque si el elemento contenedor no tienen declarado position:relative, tu elemento a mover se movera con respecto a body o el contenedor superior que tenga position:relative declarado… (se complican las cosas y ayudan los ejemplos)
+
+  En este caso, tu elemento se movera con respecto a los bordes del contenedor 
+  las coordenadas funcionan de la misma manera.
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  color: #666;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+}
+
+.cajas {
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cajas {
+  background: #eaeaed;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.relative {
+  background: purple;
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  text-align: center;
+}
+
+.relative p {
+  color: #fff;
+  background: #2db34a;
+}
