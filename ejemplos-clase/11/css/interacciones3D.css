@@ -31,10 +31,6 @@
 	perspective: 700px; /* habilita espacio 3D */
 }
 
-/*.content-3d .photo {
-	transform: rotateX(-5deg);
-}*/
-
 /*.content .photo {
 	transition: transform 1s ease-out;
 	transform-style: preserve-3d;*/ /* habilita espacio 3D para los hijos no directos
