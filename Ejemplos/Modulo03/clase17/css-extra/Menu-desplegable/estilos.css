@@ -1,0 +1,104 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background: #ccc;
+  text-align: center;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container  {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+nav {
+  background: black;
+}
+
+.menu {
+  padding: 40px 0;
+}
+
+.menu > li {
+  display: inline-block;
+}
+
+.menu a {
+  font-size: 2em;
+  display: block;
+  margin-right: 2em;
+}
+
+/* Estilos de clase aqui */
+
+.desplegable-item {
+  position: relative;
+}
+/*
+
+  Usando Display
+
+.desplegable-menu {
+  display: none;
+  position: absolute; 
+  top: 77px; 
+  width: 80%;
+  background: black;
+}
+
+.link-desplegable:hover ~ .desplegable-menu {
+  display: block;
+}
+*/
+
+/*
+
+  Usando Transiciones
+
+.desplegable-menu {
+  position: absolute; 
+  top: 77px; 
+  width: 80%;
+  background: black;
+  transform: scale(0);
+  transition: transform 2s;
+}
+
+.link-desplegable:hover ~ .desplegable-menu {
+  transform: scale(1);
+  transform-origin: left top;
+}
+
+*/
+
+/* 
+  Usando Opacidad
+*/
+
+.desplegable-menu {
+  position: absolute; 
+  top: 77px; 
+  width: 80%;
+  background: black;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.link-desplegable:hover ~ .desplegable-menu {
+  opacity: 1;
+}

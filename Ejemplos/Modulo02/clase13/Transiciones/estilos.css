@@ -15,12 +15,6 @@ body {
   margin: 0 auto;
 }
 
-header {
-  background:#65DCB4;
-  padding: 15px 0;
-  text-align: center;
-}
-
 section h2 {
   font-size: 3em;
   text-align: center;
@@ -132,14 +126,15 @@ form {
   margin-right: 1em;
 }
 
-/*.galeria-col.col-2:hover .foto-descripcion  {
+.galeria-col.col-2:hover .foto-descripcion  {
   bottom: 0;
-}*/
+}
 
+/*
 .galeria-col.col-2 img:hover ~ .foto-descripcion {
-  /*bottom: 0;*/
   left: 0;
 }
+*/
 
 /*.foto-descripcion {
   background:rgba(0,0,0,0.5);

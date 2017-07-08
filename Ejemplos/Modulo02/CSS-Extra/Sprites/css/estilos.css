@@ -76,73 +76,16 @@ ul, ol {
   margin: 0 auto;
 }
 
-.list {
+.social-list {
   display: inline-block;
   vertical-align: top;
 }
 
-.link {
+.social-link {
   color: white;
   font-size: 1.2em;
   margin-right: 1em;
   display: block;
-  text-indent: -9999px;
 }
 
-/* Usando Imagenes 1 */
-  .link {
-    background: url(../img/social-sprite.jpg);
-    width: 103px;
-    height: 99px;
-  }
-
-  .list:first-child .link {
-    background-position: 0px 300px;
-  }
-
-    .list:first-child .link:hover {
-      background-position: 0px 200px;
-    }
-
-  .list:nth-child(2) .link {
-    background-position: -98px 300px;
-  }
-
-    .list:nth-child(2) .link:hover {
-      background-position: -100px 200px;
-    }
-
-  .list:nth-child(3) .link {
-    background-position: -300px 300px;
-  }
-
-    .list:nth-child(3) .link:hover {
-      background-position: -296px 200px;
-    }
-
-  .list:nth-child(4) .link {
-    background-position: -200px 300px;
-  }
-
-    .list:nth-child(4) .link:hover {
-      background-position: -200px 200px;
-    }
-
-  .list:nth-child(5) .link {
-    background-position: -400px 300px;
-  }
-
-    .list:nth-child(5) .link:hover {
-      background-position: -397px 200px;
-    }
-
-  .list:nth-child(6) .link {
-    background-position: -498px 300px;
-  }
-
-    .list:nth-child(6) .link:hover {
-      background-position: -500px 200px;
-    }
-
-
-
+  

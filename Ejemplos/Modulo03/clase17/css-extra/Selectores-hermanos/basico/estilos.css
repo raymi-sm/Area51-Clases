@@ -1,0 +1,35 @@
+/*
+
+El selector que usa el simbolo "+" va a conectarse con el primer elemento hermano que encuentra mientras que el simbolo "~" va a conectarse con todos los elementos que sea hermanos sin importar que sean primeros, segundos o terceros
+
+*/
+
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-size: 16px;
+  color: white;
+}
+
+p {
+  margin-top: 40px;
+  padding: 30px;
+  font-size: 2em;
+}
+
+.parrafos p {
+  color: black;
+}
+
+.parrafos ~ p {
+  background: green;
+}
+
+.parrafos p + p {
+  background: blue;
+}
+
+
