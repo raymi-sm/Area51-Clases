@@ -1,0 +1,37 @@
+/* 
+
+  La perspectiva es una propiedad que define el escenario 3D para los elementos. Se puede definir con la propiedad perspective dentro del elemento contenedor.
+
+  Tambien se puede definir como un valor de la propiedad transform para definir el escenario 3D para un elemento en especifico.
+
+ */
+
+* {
+  margin:0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100px;
+  width: 100%;
+  margin: 50px auto;
+  /*perspective: 700px;*/
+}
+
+.caja1 {
+  background: red;
+  width: 100px;
+  height: 100px;
+  transition: transform 1s;
+}
+
+.caja1:hover {
+  transform: perspective(300px) rotateX(360deg);
+}
+
+.caja2 {
+  background: green;
+  width: 100px;
+  height: 100px;
+  transform: rotateX(100deg);
+}
