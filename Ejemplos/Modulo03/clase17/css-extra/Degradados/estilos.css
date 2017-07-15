@@ -148,3 +148,28 @@ header a:active, header a:hover, header .active {
   bottom: 0px;
 } 
 
+.desc-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  text-align: center;
+}
+
+.desc-wrap h3 {
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.desc-wrap a {
+  display: block;
+  background: black;
+  color: white;
+  font-size: 1em;
+  padding: 6px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}

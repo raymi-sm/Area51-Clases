@@ -1,0 +1,63 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.toggle + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background: #ddd;
+  border-radius: 60px;
+}
+
+.toggle + label::before, .toggle + label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+}
+
+.toggle + label::before {
+  right: 1px;
+  background: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+
+.toggle + label::after {
+  width: 58px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+
+.toggle:checked + label::before {
+  background: #8ce196;
+}
+
+.toggle:checked + label::after {
+  margin-left: 60px;
+}

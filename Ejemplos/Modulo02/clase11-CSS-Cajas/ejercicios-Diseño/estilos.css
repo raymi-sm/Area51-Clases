@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #1ABC9C;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu-links {
+  color: white;
+  font-size: 1.5em;
+  display: block;
+  margin: 20px 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-links:hover, .menu-links:active, .menu-links.active  {
+  color: #000;
+  border-bottom: 3px solid #000;
+}
+
+main {
+  padding: 40px 0;
+  background: #ededed;
+}
+
+img {
+  max-width: 100%;
+}
+
+.post {
+  background: white;
+  width: 50%;
+  box-shadow: 1px 1px 7px 3px #ccc;
+  margin: 40px auto;
+}
+
+.post-desc {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.post-desc h2 {
+  font-size: 2.5em;
+}
+
+.post-desc h2, .post-desc p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.social a {
+  color: #1ABC9C;
+  margin-right: 15px;
+}
+
+.social a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#read-more {
+  display: block;
+  background: #1ABC9C;
+  color: white;
+  padding: 15px;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#read-more:hover {
+  background: black;
+  color: #1ABC9C;
+}
+
+footer {
+  background: #1ABC9C;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}

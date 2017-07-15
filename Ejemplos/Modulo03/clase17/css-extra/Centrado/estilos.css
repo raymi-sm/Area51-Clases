@@ -51,13 +51,9 @@ h1 {
 
 .text-align .caja {
   display: inline-block;
-  background: url("images/team-1.jpg") no-repeat;
-  background-size: cover;
 }
 
 .margin-auto .caja {
-  background: url("images/team-2.jpg") no-repeat;
-  background-size: cover;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,8 +63,6 @@ h1 {
 }
 
 .absolute .caja {
-  background: url("images/team-3.jpg") no-repeat;
-  background-size: cover;
   position: absolute;
   left: 50%;
   top:50%;
@@ -81,8 +75,6 @@ h1 {
 }
 
 .translate .caja {
-  background: url("images/team-4.jpg") no-repeat;
-  background-size: cover;
   position: absolute;
   left: 50%;
   top:50%;
