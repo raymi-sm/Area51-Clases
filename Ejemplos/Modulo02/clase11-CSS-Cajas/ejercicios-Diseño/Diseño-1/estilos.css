@@ -77,7 +77,7 @@ img {
   margin-right: 15px;
 }
 
-.social a:hover {
+.social a:hover, .social a:active, .social a.active {
   color: black;
   text-decoration: underline;
 }
@@ -92,7 +92,7 @@ img {
   border-radius: 5px;
 }
 
-#read-more:hover {
+#read-more:hover, #read-more a:active, #read-more.active {
   background: black;
   color: #1ABC9C;
 }
