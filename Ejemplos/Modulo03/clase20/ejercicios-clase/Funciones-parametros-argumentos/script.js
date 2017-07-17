@@ -15,7 +15,17 @@ console.log(suma(3, 25));
 
 */
 
+function generarNumeroAleatorio(numero) {
+  var numeroAleatorio = Math.floor( Math.random() * numero ) + 1;
+  document.write('<div class="container"><p>' + numeroAleatorio + '</p></div>');
+}
+
+generarNumeroAleatorio(40);
+
 /*
+
+Ejemplo con el ejercicio del Cuenta Cuentos
+
 var sustantivo = prompt('Escribe un sustantivo' + preguntasRestantes);      
 var adjetivo = prompt('Escribe un adjetivo' + preguntasRestantes);
 var verbo = prompt('Escribe un verbo' + preguntasRestantes);     
@@ -25,20 +35,16 @@ document.write(historia);
 
 */
 
-function mensajes() {
-  
-}
+var sustantivo = mensajes('Escribe un sustantivo');
+var adjetivo = mensajes('Escribe un adjetivo');
+var verbo = mensajes('Escribe un verbo');
 
 function mensajes(palabras){
   var palabra = prompt(palabras);
   return palabra;
 }
 
-var sustantivo = mensajes('Escribe un sustantivo');
-var adjetivo = mensajes('Escribe un adjetivo');
-var verbo = mensajes('Escribe un verbo');
-
-function oracion(oracion){
+function oracion(){
   document.write('<p> Habia una vez un ' + sustantivo + ' ' + 'que era muy ' + adjetivo + ' ' + 'y le gustaba salir a ' + verbo + '</p>');
 }
 

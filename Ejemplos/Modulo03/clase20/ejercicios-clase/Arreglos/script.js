@@ -102,7 +102,7 @@ console.log(punto);
 
 	var imagenesIndex = document.querySelectorAll('.imagenes');
 	var imagenesArray = Array.from(imagenesIndex);
-	console.log(imagenesArray.push(10));
+	console.log("Haciendo push: " + imagenesArray.push(10));
 	console.log(imagenesArray);
 
 	/*for(var i=0; i < imagenesIndex.length; i++) {

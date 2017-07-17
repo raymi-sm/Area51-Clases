@@ -1,28 +1,31 @@
 /* 
-  Ejercicio Arreglos
+  Ejercicio Quiz
 
-  El ejercicio consiste en crear un lista de máximo 6 productos, cada producto con sus respectivos precio.
+  El ejercicio consiste en que debemos crear un pequeño quiz de 5 preguntas que el usuario debe de responder. Si el usuario responde las 5 preguntas correactamente se le mostrará un mensaje que dirá que se ganó la corona de oro, si responde 3 preguntas se le mostrará un mensaje diciendole que ganó la corona de plata y si responde menos de 3 preguntas se le mostrará un mensaje donde perdió.
 */
 
-var productos = ['Polos', 'Faldas', 'Pantalones', 'Zapatillas', 'Medias', 'Brasieres'];
+var pregunta1 = prompt('¿Cuántos continentes tiene La Tierra?');
+var pregunta2 = prompt('¿Como se llama el presidente de USA?');
+var pregunta3 = prompt('¿Qué animal hace cuac cuac?');
 
-var precios = [100, 50, 20, 10, 80, 40];
+var respuestasCorrectas = 0;
 
-document.write(
-  '<ul><li>' + productos[0] + ' <span>' + '$' + precios[0] + '</span></li>' + 
-  '<li>' + productos[1] + '</li>' + 
-  '<li>' + productos[2] + '</li>' +
-  '<li>' + productos[3] + '</li>' + 
-  '<li>' + productos[4] + '</li>' +
-  '<li>' + productos[5] + '</li>' +
-  '</ul>'
-);
+if( parseInt(pregunta1) === 5 ) {
+  respuestasCorrectas = respuestasCorrectas + 1;
+}
 
-debugger
+if( pregunta2 === 'Donal Trump' ){
+  respuestasCorrectas = respuestasCorrectas + 1;
+}
 
-document.write('<p>' + productos.join('--') +'</p>');
+if( pregunta3 === 'Pato' ) {
+  respuestasCorrectas = respuestasCorrectas + 1;
+}
 
-document.write('<p>' + productos.splice(0, 2) + '</p>');
-document.write('<p>' + productos + '</p>');
-
-productos.push('<li>Calzones</li>');
+if( respuestasCorrectas === 3 ) {
+  document.write('<h2>Te ganaste la corona de oro!</h2>');
+}else if( respuestasCorrectas === 2 ){
+  document.write('<h2>Te ganaste la corona de plata!</h2>');
+} else {
+  document.write('<h2>Perdiste! :(</h2>')
+}

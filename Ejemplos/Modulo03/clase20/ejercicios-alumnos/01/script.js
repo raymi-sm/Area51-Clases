@@ -7,15 +7,15 @@
 
     1. Crea una variable que contenga la información de las preguntas correctas que tiene el usuario
     2. Crea los prompt que necesitas para armar tus 5 preguntas y guarda el valor que escriba el usuario en estos prompt en una variable.
-    3. Evalua cuales son las preguntas que son correctas. Por cada pregunta correcta la variable que guarda la información de las preguntas correctas debe de aumentar en 1
+    3. Evalua cuales son las preguntas que son correctas. Por cada pregunta correcta la variable que guarda la información de las respuestas correctas debe de aumentar en 1
     4. Evalua cuantas preguntas el usuario respondió correctamente
     5. Imprime los mensajes según la cantidad de respuestas correctas.
-
-
 */
 
  
- // Version del programa sin funciones
+ /* 
+ 
+ Version del programa sin funciones
 
  var respuestasCorrectas = 0;
 
@@ -48,9 +48,9 @@ if(respuestasCorrectas === 5){
 }else if(respuestasCorrectas < 3){
   document.write('Perdiste :(');
 }
+*/
 
 /* 
-
 Version del programa con funciones
 
 var respuestasCorrectas = 0;
