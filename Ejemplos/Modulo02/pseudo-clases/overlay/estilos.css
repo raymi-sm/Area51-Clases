@@ -1,0 +1,31 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #D6DBD8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 50px 1em;
+}
+
+.banner {
+  background: url('images/banner.jpg') no-repeat;
+  background-size: contain;
+  min-height: 100%;
+  max-height: 100%;
+  height: 1500px;
+}
+
+.banner::before {
+  content: '';
+  display: block;
+  background: rgba(87,72,202,0.80);
+}
