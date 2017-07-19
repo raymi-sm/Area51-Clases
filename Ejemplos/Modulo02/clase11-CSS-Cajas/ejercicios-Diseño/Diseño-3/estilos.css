@@ -1,0 +1,241 @@
+/*
+
+Paleta de Colores
+
+  Amarillo: #FFAB0A;
+  Naranja: #CA3506;
+  Negro: #333333;
+  Gris: #A6A6A6;
+  Opacidad Formulario: rgba(11,13,34,0.8);
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #A6A6A6;
+}
+
+header {
+  background: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Trirong', sans-serif;
+  font-style: italic;
+  color: #FFAB0A;
+  font-size: 4em;
+}
+
+header a {
+  color: #333;
+  margin-right: 2em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+header a.active, header a:hover {
+  text-decoration: underline;
+  color: #FFAB0A;
+}
+
+nav {
+  margin: 25px 0 25px 0;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.menu-links {
+  color: #444444;
+  font-size: 1.5em;
+  margin: 20px 30px 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-links:hover, .menu-links:active, .menu-links.active  {
+  color: #d6ac35;
+}
+
+img {
+  max-width: 100%;
+}
+
+.banner {
+  background: url('images/banner.jpg');
+  color: white;
+  background-size: cover;
+  padding: 200px 0;
+  font-family: 'Trirong', sans-serif;
+  font-style: italic;
+}
+
+.banner-desc {
+  width: 50%;
+  line-height: 28px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0 auto;
+  padding: 35px 80px;
+  text-align: center;
+}
+
+.banner-desc h2 {
+  margin: 32px 0;
+  font-size: 2.5em;
+  color:#FFAB0A;
+}
+
+.banner-desc p {
+  font-size: 1.2em;
+}
+
+main {
+  background: #fff;
+  padding: 60px 0;
+}
+
+main section {
+  margin: 20px 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+}
+
+.especiales-wrap h2 {
+  color: #333;
+}
+
+.especiales h2 {
+  margin-bottom: 15px;
+}
+
+.titulo {
+  font-family: 'Playball', cursive;
+  font-size: 3em;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.titulo span {
+  color: #FFAB0A; 
+}
+
+#slogan {
+  font-size: 1.3em;
+  padding: 0 40px;
+}
+
+.especiales {
+  max-width: 500px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 40px 45px;
+  border:2px solid #ccc;
+}
+
+.especiales figure {
+  width: 250px;
+  margin: 0 auto 30px auto;
+}
+
+.especiales img {
+  border-radius: 100%;
+}
+
+.formulario {
+  background: url('images/banner2.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 50px 0;
+}
+
+.formulario h2 {
+  text-shadow: 1px 4px 5px black;
+}
+
+.formulario form {
+  background: rgba(11,13,34,0.8);
+  padding: 35px 0;
+}
+
+.formulario label, .formulario input {
+  display: block;
+}
+
+.formulario div {
+  margin: 20px 0;
+}
+
+.formulario label {
+  font-size: 1.8em;
+   margin: 20px 0;
+}
+
+.formulario input, .formulario select {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.formulario input {
+  padding-left: 1em;
+  font-size: 1em;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  outline: none;
+}
+
+input[type="submit"]{
+  border:none;
+  background: #FFAB0A;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: black;
+}
+
+footer {
+  background: #FFAB0A;
+  padding: 40px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.5em;
+}
