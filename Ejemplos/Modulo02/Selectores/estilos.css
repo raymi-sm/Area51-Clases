@@ -1,0 +1,103 @@
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.container {
+	max-width: 1024px;
+	width: 100%;
+	margin: 30px auto;
+}
+
+.padre {
+	background: purple;
+	color: white;
+	width: 700px;
+	margin: 25px auto;
+	padding: 40px;
+}
+
+ul.padre a {
+	color: white;
+	background:magenta;
+	display: block;
+}
+/*
+
+Selectores Hijos
+
+div.padre > h2 {
+	background: black;
+}
+
+div.padre > p {
+	background: orange;
+}
+
+
+div > h2 {
+	background: green;
+}
+
+div > p {
+	background: green;
+}
+
+*/
+
+
+/*
+
+Selectores Hermanos
+
+div.padre p ~ p {
+	background: orange;
+}
+
+div > h2 {
+	background: green;
+}
+
+div > p {
+	background: green;
+}
+*/
+
+/*
+
+Selectores Atributos
+
+
+
+[id]{
+	background: red;
+}
+
+[class="padre"]{
+	background: green;
+}
+
+[class*="selectores"]{
+	background: blue;
+}
+
+*/
