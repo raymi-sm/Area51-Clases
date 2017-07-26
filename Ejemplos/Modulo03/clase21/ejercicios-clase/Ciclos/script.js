@@ -37,13 +37,43 @@ var random = Math.floor(Math.random() * 34 ) + 1;
 document.write(random + '-'); 
 */
 
+/* 
+	Ejemplo usando el juego que muestra un número random. Supongamos que queremos mostrar 10 números aleatorios en nuestra pantalla
+
+
+
+var random = Math.floor(Math.random() * 70 ) + 1;
+document.write(random + '-'); 
+var random = Math.floor(Math.random() * 70 ) + 1;
+document.write(random + '-'); 
+var random = Math.floor(Math.random() * 70 ) + 1;
+document.write(random + '-'); 
+var random = Math.floor(Math.random() * 70 ) + 1;
+document.write(random + '-'); 
+var random = Math.floor(Math.random() * 70 ) + 1;
+document.write(random + '-'); 
+
+var contador = 0;
+
+// Usando Whiles
+
+while(contador < 10000) {
+	var numRandom = Math.floor(Math.random() * 70 ) + 1;
+  document.write(random + '-');
+	contador = contador + 1;
+}
+
+
+*/
+
+
 
 // Con ciclos 
 
 /*
 var contador = 0;
 
-// Usando While
+// Usando Whiles
 
 while(contador < 10000) {
 	var numRandom = numeroAleatorio(100);

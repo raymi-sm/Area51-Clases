@@ -4,10 +4,22 @@
   box-sizing: border-box;
 }
 
+/* 
+Las pseudo clases contienen una jerarquía de especificación equivalente a una clase */
+
+:root {
+  background: black;
+}
+
+html {
+  background: green;
+}
+
 body {
   background:#556370;
   color:white;
   font-family: 'Raleway', sans-serif;
+  margin: 30px 50px;
 }
 
 .container {
@@ -27,6 +39,15 @@ header {
   margin-bottom: 70px;
 }
 
+.datos{
+  margin-left: 1em;
+}
+
+.formularios .datos input[type="submit"] {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
 .formularios fieldset {
   width: 48%;
   display: inline-block;
@@ -36,20 +57,20 @@ header {
   text-shadow: 2px 2px 5px #000;
 }
 
-.formularios fieldset input {
+input {
   font-size: 1em;
   padding: 10px 1em;
   border-radius: 5px;
   border:none;
 }
 
-.formularios input {
+.input-wrap input {
   display: block;
   margin: 25px 0 50px 0;
   width: 100%;
 }
 
-.formularios label, .formularios i {
+.input-wrap label, .input-wrap i {
   text-shadow: 2px 2px 5px #000;
   font-weight: bolder;
 }
@@ -63,6 +84,9 @@ header {
   font-weight: bolder;
   border-radius: 5px; 
   padding: 20px 0;
+  width: 80%;
+  margin: 40px auto;
+  display: block;
 }
 
 .formularios input[type="submit"]:hover {
@@ -70,20 +94,51 @@ header {
   background: #4ECDC4;
 }
 
-fieldset:nth-child(2){
-  margin-left: 1em;
+.form-required:focus {
+  background:white none;
 }
 
+/* Clase comienza acá */
+
+input[type="submit"]:disabled {
+  background:#ededed;
+  color: black;
+}
+
+input[type="submit"]:disabled:hover {
+  background:#ededed;
+  color: black;
+}
+
+/*
 .form-required:required {
   background:pink url('images/icon-x.svg') no-repeat 5px 16px;
   background-size: 25px;
 }
-
-.form-required:focus {
-  background:white none;
+*/
+.form-required:invalid {
+  background:blue url('images/icon-x.svg') no-repeat 5px 16px;
+  background-size: 25px;
 }
 
 .form-required:valid {
   background: white url('images/check.svg') no-repeat 8px 18px;
   background-size: 20px;
 }
+
+input:optional {
+  background: purple;
+}
+
+.checkbox + label {
+  color: #ccc;
+  font-style: italic;
+} 
+.checkbox:checked + label {
+  color: #f00;
+  font-style: normal;
+} 
+
+.enable:checked ~ input[type='submit']:disabled {
+  background: red;  
+} 

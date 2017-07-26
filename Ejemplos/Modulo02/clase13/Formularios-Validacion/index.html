@@ -16,7 +16,7 @@
   <main>
     <section class="formularios container">
 			<form>
-			  <fieldset>
+			  <fieldset class="login">
 					<legend>Login</legend>
 					<div class="input-wrap">
 						<i class="fa fa-users"></i>	
@@ -27,7 +27,7 @@
 					<div class="input-wrap">
 						<i class="fa fa-envelope-o"></i>
 						<label for="Email">Email</label>
-						<input type="email" name="email" required placeholder="ejemplo@correo.com" class="form-required" />
+						<input type="email" name="email" required placeholder="ejemplo@correo.com" class="form-required"/>
 					</div>
 
 					<div class="input-wrap">
@@ -35,20 +35,25 @@
 						<label for="Asunto">Contraseña</label>
 						<input type="password" placeholder="Escribe tu contraseña" required class="form-required" />
 					</div>
+
+					<div class="check">
+						<input type="checkbox" class="checkbox" id="checking"/>
+						<label for="checking">Usando un check</label>
+					</div>
 				</fieldset>
 
-				<fieldset>
+				<fieldset class="datos">
 					<legend>Datos</legend>
 					<div class="input-wrap">
 						<i class="fa fa-users"></i>	
 						<label for="Nombre">Nombres y Apellidos</label>
-						<input type="text" name="nombre" placeholder="Escribe tu nombre y apellido" required class="form-required" />
+						<input type="text" name="nombre" placeholder="Escribe tu nombre y apellido" required class="form-required" autocomplete="name" autofocus />
 					</div>
 
 					<div class="input-wrap">
 						<i class="fa fa-phone"></i>
 						<label for="Email">Teléfono</label>
-						<input type="number" name="telefono" placeholder="Escribe tu telefono" />
+						<input type="number" name="telefono" placeholder="Escribe tu telefono" min="5" max="10" />
 					</div>
 
 					<div class="input-wrap">
@@ -57,8 +62,16 @@
 						<input type="date" name="birthdays" />
 					</div>
 
+					<div class="check-habilitado">
+						<input type="checkbox" class="enable" id="enable"/>
+						<label for="enable">Habilitar Botón</label>
+						<input type="submit" name="submit" value="Boton Desabilitado" class="button blue medium contact-btn" disabled>
+					</div>
+
 				</fieldset>
 					<input type="submit" name="submit" value="Enviar" class="button blue medium contact-btn">
+
+					<input type="submit" name="submit" value="Boton Desabilitado" disabled>
 			</form>
 		</section>
   </main>
