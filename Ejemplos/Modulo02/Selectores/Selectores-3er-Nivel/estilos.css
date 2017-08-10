@@ -1,0 +1,90 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background: #ededed;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 2em;
+  background: white;
+}
+
+.uno ul,
+.uno ol,
+.post {
+  margin: 30px 0;
+  font-size: 2em;
+}
+
+code {
+  color: #00b22c;
+  font-size: 2em;
+}
+
+/* 
+
+  Estilos Clase 
+
+  Se cuenta a partir de cero
+
+  3n = donde 'n' es como decir 3x donde n aumenta en 1 cada vez que la iteracion de los elementos termina
+
+  3 x 0 = 0 ( no hay elemento )
+  3 x 1 = 3 ( tercer elemento )
+  3 x 2 = 6 ( sexto elemento )
+
+*/
+
+.uno li:nth-child(1) {
+  background: lightsteelblue;
+}
+
+.dos article:nth-child(2){
+  background: lightsteelblue;
+}
+
+.tres p:nth-child(3n) {
+  background: lightsteelblue;
+}
+
+.cuatro .post:nth-child(odd) {
+  background: lightsteelblue;
+}
+
+.cinco .post:nth-child(even) {
+  background: lightsteelblue;
+}
+
+/* Selectores con elementos hijos */
+
+.seis ul li:first-child{
+  background: lightsteelblue;
+}
+
+.seis ol li:last-child{
+  background: lightsteelblue;
+}
+
+/* Selectores con elementos hermanos */
+
+.siete p:first-of-type {
+  background: lightsteelblue;
+}
+
+.siete p:last-of-type {
+  background: lightsteelblue;
+}

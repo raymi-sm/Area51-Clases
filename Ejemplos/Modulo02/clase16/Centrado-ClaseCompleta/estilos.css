@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #ededed;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  height: 900px;
+  width: 100%;
+  margin: 50px auto;
+  background: white;  
+  padding: 60px 1em;
+  border-radius: 10px;
+}
+
+.caja {
+  width: 400px;
+  height: 400px;
+}
+
+.caja img {
+  max-width: 100%;
+}
+
+/* Tecnicas */
+
+.text-align .container {
+  text-align: center;
+}
+
+
+.text-align .caja {
+  display: inline-block;
+}
+
+.margin-auto .caja {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.absolute .container {
+  position: relative;
+}
+
+.absolute .caja {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+}
+
+.translate .container {
+  position: relative;
+}
+
+.translate .caja {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

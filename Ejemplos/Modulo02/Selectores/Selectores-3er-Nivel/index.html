@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Selectores 3er Nivel</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Selectores Avanzados (3<sup>er</sup>) nivel</h1>
+    </div>
+  </header>
+
+  <div class="uno">
+    <div class="container">
+      <code>li:nth-child(1)</code>
+      <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+      </ul>
+      <ol>
+        <li>Cinco</li>
+        <li>Seis</li>  
+        <li>Siete</li>
+        <li>Ocho</li>
+      </ol>
+    </div>
+  </div>
+
+  <section class="dos">
+    <div class="container">
+      <code>article:nth-child(2)</code>
+      <article class="post">Uno</article>
+      <article class="post">Dos</article>
+      <article class="post">Tres</article>
+      <article class="post">Cuatro</article>
+      <article class="post">Cinco</article>
+    </div>
+  </section>
+
+  <section class="tres">
+    <div class="container">
+      <code>p:nth-child(3n)</code>
+      <p class="post">Uno</p>
+      <p class="post">Dos</p>
+      <p class="post">Tres</p>
+      <p class="post">Cuatro</p>
+      <p class="post">Cinco</p>
+    </div>
+  </section>
+
+  <section class="cuatro">
+    <div class="container">
+      <code>.post:nth-child(odd)</code>
+      <div class="post">Uno</div>
+      <div class="post">Dos</div>
+      <div class="post">Tres</div>
+      <div class="post">Cuatro</div>
+      <div class="post">Cinco</div>
+    </div>
+  </section>
+
+  <section class="cinco">
+    <div class="container">
+      <code>.post:nth-child(even)</code>
+      <div class="post">Uno</div>
+      <div class="post">Dos</div>
+      <div class="post">Tres</div>
+      <div class="post">Cuatro</div>
+      <div class="post">Cinco</div>
+    </div>
+  </section>
+
+  <div class="seis">
+    <div class="container">
+      <code>li:first-child</code>
+      <ul>
+        <li class="post">Uno</li>
+        <li class="post">Dos</li>
+        <li class="post">Tres</li>
+        <li class="post">Cuatro</li>
+      </ul>
+      <code>li:last-child</code>
+      <ol>
+        <li class="post">Uno</li>
+        <li class="post">Dos</li>
+        <li class="post">Tres</li>
+        <li class="post">Cuatro</li>
+      </ol>
+    </div>
+  </div>
+
+  <section class="siete">
+    <div class="container">
+      <code>p:first-of-type y p:last-of-type</code>
+      <p class="post">Uno</p>
+      <aside class="post">Dos</aside>
+      <p class="post">Tres</p>
+      <div class="post">Cuatro</div>
+      <p class="post">Cinco</p>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ededed;
+}
+
+.container {
+  background: #fff;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0 80px 2em;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.8em;
+  color:#8e8e8e;
+  margin-top: 20px;
+}
+
+.lista {
+  padding: 40px 0;
+}
+
+.palabras {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2em;
+  width: 30%;
+}
+
+.palabra {
+  padding: 10px 5% 10px 6%;
+  font-size: 1.2em;
+  border: 3px solid #ededed;
+  display: block;
+  width: 90%;
+  margin: 30px 0 15px 0;
+  outline: none;
+  border-radius: 5px;
+}
+
+.palabra:focus {
+  border: 3px solid #009dff
+}
+
+.palabra + small {
+  text-align: left;
+  display: block;
+  font-style: italic;
+  color: red;
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+
+.palabra.input-wrong {
+  border: 3px solid red;
+  background: url('images/icon-x.svg') no-repeat 0 12px;
+  background-size: 20px;
+}
+
+.palabra.input-wrong + small {
+  opacity: 1;
+}
+
+.palabra.input-wrong:valid {
+  background: url('images/check.svg') no-repeat 0 12px;
+  background-size: 20px;
+  border: 3px solid green;
+}
+
+.palabra.input-wrong:valid + small {
+  opacity: 0;
+}
+
+.oracion-btn {
+  background: #009dff;
+  border:none;
+  color: white;
+  padding: 30px 50px;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  cursor: pointer;
+}

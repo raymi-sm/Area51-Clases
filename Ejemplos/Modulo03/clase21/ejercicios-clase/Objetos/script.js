@@ -27,9 +27,9 @@ for(var i=0; i<persona.habilidades.length; i++) {
 document.write(persona.habilidades[i]);
 }
 
-for (prop in person) {
-   //Esto está mal: console.log(prop, ': ', person.prop);
-  console.log(prop, ': ', person[prop]);
+for (prop in persona) {
+   //Esto está mal: console.log(prop, ': ', persona.prop);
+  console.log(prop, ': ', persona[prop]);
 }
 */
 

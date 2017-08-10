@@ -35,6 +35,8 @@ document.write(historia);
 
 */
 
+
+/*
 var sustantivo = mensajes('Escribe un sustantivo');
 var adjetivo = mensajes('Escribe un adjetivo');
 var verbo = mensajes('Escribe un verbo');
@@ -49,3 +51,4 @@ function oracion(){
 }
 
 oracion();
+*/

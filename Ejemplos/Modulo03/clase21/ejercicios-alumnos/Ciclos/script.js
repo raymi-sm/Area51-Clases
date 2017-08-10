@@ -65,10 +65,7 @@ function randomRGB() {
 }
 
 function randomColor() {
-  var color = 'rgb(';
-  color += randomRGB() + ',';
-  color += randomRGB() + ',';
-  color += randomRGB() + ')';
+  var color = 'rgb(' + randomRGB() + ',' + randomRGB() + ',' + randomRGB() + ');';
   return color;
 }
 

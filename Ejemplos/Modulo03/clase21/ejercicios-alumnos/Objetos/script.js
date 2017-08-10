@@ -56,19 +56,26 @@ var students = [
 
 // Imprimiendo la informacion en la pantalla
 
-var message = '';
 var student;
+var message=" ";
 
 function print(message) {
   var divReporte = document.getElementById('reporte-estudiantes');
   divReporte.innerHTML = message;
 }
 
-for (var i = 0; i < students.length; i += 1) {
+for (var i = 0; i < students.length; i ++) {
+  debugger
   student = students[i];
+  /*
+  message = '<h2> Estudiante: ' + student.name + '</h2> <p> Logros: ' + student.track + '</p> <p> Points: ' + student.points + '</p> <p> Achievments: ' + student.achievements + '</p>'; 
+  */
   message += '<h2>Student: ' + student.name + '</h2>';
   message += '<p>Track: ' + student.track + '</p>';
   message += '<p>Points: ' + student.points + '</p>';
   message += '<p>Achievements: ' + student.achievements + '</p>';
+  
+  
 }
 print(message);
+console.log(students);

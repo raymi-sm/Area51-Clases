@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>JavaScript: DOM</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="js-title">Javascript y el DOM</h1>
+    <h2>El cuenta Cuentos</h2>
+    <form action="">
+      <ul class="lista"> 
+        <li class="palabras">
+          <p>Ingresa tu sustantivo</p>
+          <input class="palabra" id="sustantivo" type="text" placeholder="ingresa un sustantivo" required>
+          <small class="mensaje">Te faltó llenar este campo</small>
+        </li>
+
+        <li class="palabras">
+          <p>Ingresa tu adjetivo</p>
+          <input class="palabra" id="adjetivo" type="text" placeholder="ingresa un adjetivo" required>
+          <small class="mensaje">Te faltó llenar este campo</small>
+        </li>
+
+        <li class="palabras">
+          <p>Ingresa tu verbo</p>
+          <input class="palabra" id="verbo" type="text" placeholder="ingresa un verbo" required>
+          <small class="mensaje">Te faltó llenar este campo</small>
+        </li>
+      </ul>
+      <input class="oracion-btn" type="submit" value="Crea tu Cuento">
+    </form>
+
+    <div class="cuento"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
