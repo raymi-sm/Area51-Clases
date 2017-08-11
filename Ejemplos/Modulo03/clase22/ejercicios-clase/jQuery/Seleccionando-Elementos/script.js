@@ -6,5 +6,6 @@ $(document).ready(function(){
 	
 	console.log($('#titulo'));
 	console.log($('.parrafo.uno'));
-	console.log($('p'));
+	console.log($('.parrafo.uno'));
+	console.log($('input[type="text"]'));
 });

@@ -52,6 +52,24 @@ var addItemInput = document.querySelector('input.addItemInput');
 var addItemButton = document.querySelector('button.addItemButton');
 var removeItemButton = document.querySelector('button.removeItemButton');
 var listItems = document.querySelectorAll('li');
+var scrolling = document.querySelector('.scroll');
+var usuario = document.getElementById('usuario');
+var pass = document.getElementById('pass');
+
+// Eventos del navegador
+
+window.addEventListener('scroll', function(){
+  scrolling.textContent = 'X: ' + window.scrollX + ' Y: ' + window.scrollY;
+});
+
+window.addEventListener('resize', function(){
+  var myDiv = document.createElement('div');
+  myDiv.innerHTML = 'Holap';
+  myDiv.className = 'miclase';
+  listDiv.insertBefore(myDiv, descriptionP);
+});
+
+// Eventos del mouse
 
 listItems.forEach(function(items){
   items.addEventListener('mouseover', function(){
@@ -87,6 +105,18 @@ addItemButton.addEventListener('click', function() {
   addItemInput.value = '';
 });
 
+removeItemButton.addEventListener('click', function() {
+  var ul = document.getElementsByTagName('ul')[0];
+  var li = document.querySelector('li:last-child');
+  ul.removeChild(li);
+});
+  
+descriptionP.addEventListener('dblclick', function(){
+  descriptionP.style.color = 'blue';
+});
+
+// Eventos del teclado
+
 
 addItemInput.addEventListener('keypress', function(e){
   console.log(e.keyCode);
@@ -99,33 +129,34 @@ addItemInput.addEventListener('keypress', function(e){
   }
 })
   
-removeItemButton.addEventListener('click', function() {
-  var ul = document.getElementsByTagName('ul')[0];
-  var li = document.querySelector('li:last-child');
-  ul.removeChild(li);
-});
-  
-descriptionP.addEventListener('dblclick', function(){
-  descriptionP.style.color = 'blue';
-});
-  
-/*  
 descriptionInput.addEventListener('keydown', function(e){
-  console.log(e);
   console.log(e.keyCode);
 });
-
-
 
 descriptionInput.addEventListener('keyup', function(e){
-  //console.log(e);
   console.log(e.keyCode);
 });
 
+// Eventos de formulario
+
+/*
+usuario.addEventListener('focus', function( event ) {
+  console.log('formulario on focus');
+  event.target.style.background = 'pink';    
+});
+
+pass.addEventListener("blur", function( event ) {
+  console.log('formulario on blur');
+  event.target.style.background = "blue";    
+});
 */
 
-descriptionInput.addEventListener('keypress', function(e){
-  //console.log(e);
-  console.log(e.keyCode);
+usuario.addEventListener('focusin', function( event ) {
+  console.log('formulario on focus');
+  event.target.style.background = 'pink';    
 });
 
+pass.addEventListener("focusout", function( event ) {
+  console.log('formulario on blur');
+  event.target.style.background = "blue";    
+});
