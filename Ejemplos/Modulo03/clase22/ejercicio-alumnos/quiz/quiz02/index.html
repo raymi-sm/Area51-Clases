@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>JavaScript: DOM</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="js-title">Javascript y el DOM</h1>
+
+    <form>
+      <h2>Llena este quiz!</h2>
+      <div>
+        <p>¿Cuántos estados tienen los Estados Unidos?</p>
+        <input class="pregunta pregunta1" type="text" placeholder="escribe tu respuesta">
+      </div>
+
+      <div>
+        <p>¿Cuántas patas tiene una araña?</p>
+        <input class="pregunta pregunta2" type="text" placeholder="escribe tu respuesta">
+      </div>
+
+      <div>
+        <p>¿Como se llama el presidente de México?</p>
+        <input class="pregunta pregunta3" type="text" placeholder="escribe tu respuesta">
+      </div>
+
+      <div>
+        <p>¿Cual es la capital de Haití?</p>
+        <input class="pregunta pregunta4" type="text" placeholder="escribe tu respuesta">
+      </div>
+
+      <input type="submit" value="Termine!" id="button">
+    </form>
+
+    <div class="after-submit">
+      <h2 class="mensaje"></h2>
+      <p class="correctas"></p>
+      <img id="imagen">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

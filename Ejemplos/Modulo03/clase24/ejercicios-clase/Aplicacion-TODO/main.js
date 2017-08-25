@@ -10,6 +10,7 @@
 	8. Obtener el valor del elemento y cambiar el titulo por defecto por dicho valor
 */
 
+/*
 (function() {
   var addValue = document.querySelector("#add");
 
@@ -21,8 +22,7 @@
       var lista = document.getElementById("to-do");
       var item = document.createElement("li");
       item.className = "item";
-      //item.innerHTML = "<p>" + campoTexto + "</p>" + "<div><span class='fa fa-trash-o'></span>" + "<span class='fa fa-check'></span></div>";
-      item.innerHTML = "<p>" + campoTexto + "</p>";
+      item.innerHTML = "<p>" + campoTexto + "</p>" + "<div><span class='fa fa-trash-o'></span>" + "<span class='fa fa-check'></span></div>";
       lista.appendChild(item);
       document.getElementById("post-field").value = "";
     } else {
@@ -31,13 +31,11 @@
 
     var listaItems = Array.from(document.querySelectorAll(".item"));
     var basurita = document.querySelector(".fa-trash-o");
-    /*
         for(var contador = 0; contador < listaItems.length; contador++){
             listaItems[contador].addEventListener("click", function(){
                 titulo.innerHTML = campoTexto;
             });
         }
-    */
     listaItems.forEach(function(item) {
       item.addEventListener("click", function() {
         titulo.innerHTML = campoTexto;
@@ -49,3 +47,79 @@
     });
   });
 })();
+
+
+(function() {
+  var addValue = document.querySelector("#add");
+
+  addValue.addEventListener("click", todo);
+
+  function todo(event) {
+    event.preventDefault();
+    var campoTexto = document.getElementById("post-field").value;
+    if (campoTexto) {
+      var lista = document.getElementById("to-do");
+      var item = document.createElement("li");
+      item.className = "item";
+      item.innerHTML =
+        "<p>" +
+        campoTexto +
+        "</p>" +
+        "<div><span class='fa fa-trash-o'></span>" +
+        "<span class='fa fa-check'></span></div>";
+      lista.appendChild(item);
+      document.getElementById("post-field").value = "";
+    } else {
+      alert("OYEEE TIENES QUE PONER ALGO PRIMERO U_U");
+    }
+
+    var listaItems = Array.from(document.querySelectorAll(".item"));
+    var titulo = document.querySelector(".titulo-dinamico");
+
+    for (var contador = 0; contador < listaItems.length; contador++) {
+      listaItems[contador].addEventListener("click", titulo);
+    }
+
+    function titulo() {
+      titulo.innerHTML = campoTexto;
+    }
+  }
+})();
+*/
+
+var addValue = document.querySelector("#add");
+
+addValue.addEventListener("click", todo);
+
+function todo(event) {
+  event.preventDefault();
+  var campoTexto = document.getElementById("post-field").value;
+  if (campoTexto != " ") {
+    var lista = document.getElementById("to-do");
+    var item = document.createElement("li");
+    item.className = "item";
+    item.innerHTML =
+      "<p>" +
+      campoTexto +
+      "</p>" +
+      "<div><span class='fa fa-trash-o'></span>" +
+      "<span class='fa fa-check'></span></div>";
+    lista.appendChild(item);
+    // La variable es una referencia en la memoria mas no el elemento como tal entonces por eso es mejor hacer referencia al elemento usando document
+    // campoTexto = '' esto no ayuda
+    document.getElementById("post-field").value = "";
+  } else {
+    alert("OYEEE TIENES QUE PONER ALGO PRIMERO U_U");
+  }
+
+  var listaItems = Array.from(document.querySelectorAll(".item"));
+  var titulo = document.querySelector(".titulo-dinamico");
+
+  for (var contador = 0; contador < listaItems.length; contador++) {
+    listaItems[contador].addEventListener("click", titulo);
+  }
+
+  function titulo() {
+    titulo.innerHTML = campoTexto;
+  }
+}
