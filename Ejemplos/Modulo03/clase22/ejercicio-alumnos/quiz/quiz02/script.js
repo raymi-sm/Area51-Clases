@@ -1,50 +1,51 @@
 var terminasteBTN = document.querySelector("#button");
 
+var mensajes = [
+  "No sabes nada",
+  "Tienes que estudiar",
+  "Estudia Mas",
+  "Estas listo para conquistar el mundo"
+];
+
+var imagenes = [
+  "images/no-sabes-nada-meme.gif",
+  "images/tienes-que-estudiar-meme.gif",
+  "images/estudia-mas-meme.gif",
+  "images/like-a-boss-meme.gif"
+];
+
+var rango = 0;
+
+var respuestasCorrectas = 0;
+
 terminasteBTN.addEventListener("click", check);
 
-function check(e) {
-  e.preventDefault();
-  var pregunta1 = document.querySelector(".pregunta1").value;
-  var pregunta2 = document.querySelector(".pregunta2").value;
-  var pregunta3 = document.querySelector(".pregunta3").value;
-  var pregunta4 = document.querySelector(".pregunta4").value;
+function check(evento) {
+  evento.preventDefault();
+  var usuarioRespuesta = Array.from(document.querySelectorAll(".pregunta"));
+  var respuestas = [51, 8, "Enrique Peña Nieto", "Puerto Principe"];
 
-  var respuestasCorrectas = 0;
-
-  if (pregunta1 == "Donald Trump") {
+  var nuevoArr = usuarioRespuesta.concat(respuestas);
+  if (nuevoArr[0].value == nuevoArr[4]) {
     respuestasCorrectas++;
   }
 
-  if (pregunta2 == 8) {
+  if (nuevoArr[1].value == nuevoArr[5]) {
     respuestasCorrectas++;
   }
 
-  if (pregunta3 == "Enrique Peña Nieto") {
+  if (nuevoArr[2].value == nuevoArr[6]) {
     respuestasCorrectas++;
   }
 
-  if (pregunta4 == "Puerto Principe") {
+  if (nuevoArr[3].value == nuevoArr[7]) {
     respuestasCorrectas++;
   }
 
-  var mensajes = [
-    "No sabes nada",
-    "Tienes que estudiar",
-    "Estudia Mas",
-    "Estas listo para conquistar el mundo"
-  ];
-  var imagenes = [
-    "images/no-sabes-nada-meme.gif",
-    "images/tienes-que-estudiar-meme.gif",
-    "images/estudia-mas-meme.gif",
-    "images/like-a-boss-meme.gif"
-  ];
-  var rango = 0;
+  puntaje();
+}
 
-  console.log(
-    "Respuestas Correctas: " + respuestasCorrectas + " El rango es: " + rango
-  );
-
+function puntaje() {
   if (respuestasCorrectas == 4) {
     rango = 3;
   }
