@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('fonts/HelveticaNeue.ttf'),
+        url('fonts/HelveticaNeue.ttf'),
+        url('fonts/HelveticaNeue.ttf')
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+header {
+  background-color:#00A8FF;
+}
+
+header, header a {
+  color: white;
+}
+
+h1 {
+  font-family: 'HelveticaNeue';
+  font-size: 3em;
+}
+
+header a {
+  font-size: 2em;
+}
+
+.banner {
+  background-color: #B26400;
+  font-family: 'HelveticaNeue';
+  color: white;
+}
+
+.services {
+  background-color: #FF8F00;
+  background-color: #3C8AB2;
+}
+
+.services > h2 {
+  font-size: 3em;
+  font-style: italic;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+.services a {
+  font-size: 50px;
+  background-color: #19B0FF;
+  color: white;
+}
+
+.servicios h2 {
+  font-family: 'Wendy One', sans-serif;
+  font-size: 60px;
+  color: #B26400;
+}
+
+.servicios p {
+  color: #FF8F00;
+  font-size: 30px;
+  font-weight: bolder;
+  word-spacing: 13px;
+}
+
+.servicios p:first-letter {
+  color: #19B0FF;
+  font-size: 6em; 
+}
+
+.servicio1 span {
+  text-decoration: line-through;
+}
+
+footer {
+  background: #19B0FF;
+  font-size: 40px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}

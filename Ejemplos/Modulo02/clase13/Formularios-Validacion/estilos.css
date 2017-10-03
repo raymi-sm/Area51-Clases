@@ -110,12 +110,12 @@ input[type="submit"]:disabled:hover {
   color: black;
 }
 
-/*
+
 .form-required:required {
   background:pink url('images/icon-x.svg') no-repeat 5px 16px;
   background-size: 25px;
 }
-*/
+
 .form-required:invalid {
   background:blue url('images/icon-x.svg') no-repeat 5px 16px;
   background-size: 25px;
